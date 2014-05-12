@@ -1,49 +1,161 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
++font("PFDinTextCompPro", "pfdintextcomppro-regular")
+
+*
+	+box
+	&:before,
+	&:after
+		+box
+
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
+	font-size: 12px
+	font-family: 'PFDinTextCompPro', Arial, sans-serif
 	line-height: 1.4
+	+font-smoothing
+	background: #efefef
+	min-width: 1024px
 
+.slider
+	min-height: 500px
+	.slider__img
+		+cover
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
 
-// common blocks      
+%in
+	min-width: 1024px
+	margin: 0 auto
+	padding: 0 22px
+
+.icon
+	display: inline-block
+	vertical-align: middle
+	&.icon_opt
+		+s(opt)
+	&.icon_pin
+		+s(pin)
+
+.out
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+
+.navbar
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	background: #fff
+	+box-shadow(0px 0 20px rgba(#000,.5))
+	text-align: center
+	.navbar__in
+		position: relative
+		+clr
+		@extend %in
+		padding-top: 18px
+		padding-bottom: 18px
+
+.logo
+	position: absolute
+	top: 50%
+	margin-top: -25px
+	left: 22px
+	display: inline-block
+	vertical-align: top
+	a
+		display: block
+		+s(logo_sm)
+		+hidetext
+
+.menu
+	display: inline-block
+	vertical-align: top
+	padding-top: 20px
+	// margin-left: 267px
+	.menu__ul
+	.menu__item
+		display: inline-block
+		font-size: 16px
+		color: #000
+		text-transform: uppercase
+		margin-left: 20px
+		a
+			color: inherit
+			text-decoration: none
+		&.is-active,
+		&:hover
+			a
+				color: #979797
+		&:first-child
+			margin-left: 0
+
+.submenu
+	display: inline-block
+	vertical-align: top
+	padding-top: 8px
+	margin-left: 31px
+	.submenu__ul
+		font-size: 0
+	.submenu__item
+		display: inline-block
+		font-size: 16px
+		color: #000
+		text-transform: uppercase
+		margin-right: 0
+		border: 1px solid #eaeaea
+		a
+			display: block
+			height: 40px
+			line-height: 22px
+			padding: 8px 15px
+			color: inherit
+			text-decoration: none
+			border: 2px solid transparent
+		&:first-child
+			margin-right: -1px
+		&:hover
+			position: relative
+			border: 1px solid #ff1419
+			a
+				border: 2px solid #ff1419
+		.icon
+			position: relative
+			top: -3px
+			margin-right: 10px
+		.icon_pin
+			top: -2px
+
+.social
+	display: inline-block
+	vertical-align: top
+	padding-top: 30px
+	margin-left: 10px
+	display: none
+	.social__ul
+		+clr
+	.social__item
+		display: block
+		float: left
+		+hidetext
+		a
+			display: block
+			height: 100%
+		$networks: vk fb tw
+		@each $icon in $networks
+			&.social__item_#{$icon}
+				+s(#{$icon})
+				&:hover
+					+sp(#{$icon}_a)
+
+.flex
+	float: right
+	display: block
+	margin-top: 11px
+	+s(flex)
+	+hidetext
+	&:hover
+		+sp(flex_a)
