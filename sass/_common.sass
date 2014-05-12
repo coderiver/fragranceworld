@@ -14,8 +14,15 @@ body
 	background: #efefef
 	min-width: 1024px
 
+
+
+
 .slider
-	min-height: 500px
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	// min-height: 500px !important
 	.slider__img
 		+cover
 		position: absolute
@@ -38,11 +45,15 @@ body
 		+s(pin)
 
 .out
-	position: absolute
-	left: 0
-	top: 0
-	width: 100%
+	min-height: 100%
+	height: auto !important
 	height: 100%
+	margin: 0 auto -86px
+	position: relative
+
+.push,
+.navbar
+	height: 86px
 
 .navbar
 	position: absolute
@@ -52,12 +63,18 @@ body
 	background: #fff
 	+box-shadow(0px 0 20px rgba(#000,.5))
 	text-align: center
+	// +r(w1170)
+		// text-align: left
 	.navbar__in
 		position: relative
 		+clr
 		@extend %in
 		padding-top: 18px
 		padding-bottom: 18px
+	.navbar__right
+		position: absolute
+		right: 22px
+		top: 18px
 
 .logo
 	position: absolute
@@ -75,7 +92,9 @@ body
 	display: inline-block
 	vertical-align: top
 	padding-top: 20px
-	// margin-left: 267px
+	margin-left: 180px
+	// +r(w1170)
+		// margin-left: 265px
 	.menu__ul
 	.menu__item
 		display: inline-block
@@ -130,11 +149,14 @@ body
 			top: -2px
 
 .social
+	float: right
+	margin-right: 25px
 	display: inline-block
 	vertical-align: top
-	padding-top: 30px
-	margin-left: 10px
-	display: none
+	padding-top: 15px
+	// margin-left: 10px
+	+r(w1170)
+		display: none
 	.social__ul
 		+clr
 	.social__item
@@ -159,3 +181,4 @@ body
 	+hidetext
 	&:hover
 		+sp(flex_a)
+
