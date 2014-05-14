@@ -1,8 +1,10 @@
 +font("PFDinTextCompPro", "pfdintextcomppro-regular")
 +font("PFDinTextCompPro Medium", "pfdintextcomppro-medium")
++font("PFDinTextCompPro Light", "pfdintextcomppro-light")
 
 $font-dr: 'PFDinTextCompPro', Arial, sans-serif
 $font-dm: 'PFDinTextCompPro Medium', Arial, sans-serif
+$font-dl: 'PFDinTextCompPro Light', Arial, sans-serif
 $font-base: $font-dr
 
 *
@@ -177,6 +179,9 @@ body
 		+sp(flex_a)
 
 .page
+	&.page_contacts
+		.page__header
+			margin-bottom: 20px
 	.page__header
 		padding-top: 45px
 		margin-bottom: 85px
@@ -354,8 +359,69 @@ body
 			line-height: 28px
 			border-bottom: 1px dotted #000
 
+.contacts
+	.contacts__row
+		background: #fff
+		padding: 50px 0
+	.contacts__ul
+		text-align: center
+		text-transform: uppercase
+		font-size: 16px
+		color: #000
+		font-family: $font-dm
+		.marked
+			color: #454545
+			font-family: $font-dl
+		p
+			line-height: 1.6
+		a
+			color: inherit
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.contacts__col
+		position: relative
+		display: inline-block
+		vertical-align: top
+		padding-left: 40px
+		margin-left: 117px
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			content: ""
+		&:first-child
+			margin-left: 0
+		&.contacts__col_mail
+			&:before
+				+s(mail)
+		&.contacts__col_tel
+			&:before
+				+s(tel)
+		&.contacts__col_adr
+			&:before
+				+s(adr)
+	// .contacts__map
+	// 	height: 305px
 
-
-
-
-
+.google-map
+	height: 305px
+	.gmnoprint
+		display: none
+	.gm-style-cc
+		display: none
+	.google-map__window
+		text-transform: uppercase
+		font-size: 16px
+		color: #000
+		font-family: $font-dm
+		span
+			color: #454545
+			font-family: $font-dl
+		a
+			color: inherit
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	a[title]
+		display: none !important

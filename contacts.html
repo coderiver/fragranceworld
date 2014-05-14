@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+</head>
+<body>
+
+<div class="out">
+	<div class="page page_contacts">
+		<div class="page__header">
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+			</ul>
+			<!-- /.breadcrumbs -->
+			<div class="h1">Контактная информация</div>
+		</div>
+		<!-- /.topper -->
+		<div class="page__contnet">
+			<div class="contacts">
+				<div class="contacts__row">
+					<div class="container">
+						<ul class="contacts__ul">
+							<li class="contacts__col contacts__col_mail">
+								<p><a href="mailto:fragrance@gmail.com">fragrance@gmail.com</a></p>
+							</li>
+							<li class="contacts__col contacts__col_tel">
+								<p><span class="marked">+ 375 29</span> 361 55 87</p>
+								<p><span class="marked">+ 375 44</span> 361 59 61</p>
+							</li>
+							<li class="contacts__col contacts__col_adr">
+								<p>Г. Минск, ул. Мележа 1, офис 1777</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<div class="map">
+						<div id="map-canvas" class="google-map"></div>
+						<script>
+								function initialize() {
+									var mapOptions = {
+											zoom: 15,
+											center: new google.maps.LatLng(53.939539, 27.601461),
+											disableDefaultUI: true,
+											scrollwheel: false,
+										zoomControl: true,
+										zoomControlOptions: {
+												style: google.maps.ZoomControlStyle.DEFAULT,
+												position: google.maps.ControlPosition.LEFT_CENTER
+											},
+											mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+									}
+									var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+									var image = 'img/marker.png';
+									var myLatLng1 = new google.maps.LatLng(53.939539, 27.601461);
+									// var myLatLng2 = new google.maps.LatLng(40.742963, -73.992335);
+									// var myLatLng3 = new google.maps.LatLng(40.739322, -73.993279);
+									// var myLatLng4 = new google.maps.LatLng(40.744101, -73.999716);
+									// var myLatLng5 = new google.maps.LatLng(40.743321,-73.993322);
+									var marker1 = new google.maps.Marker({
+											position: myLatLng1,
+											map: map,
+											title: 'Uluru (Ayers Rock)', 
+											icon: image
+								});
+								// var marker2 = new google.maps.Marker({
+								// 			position: myLatLng2,
+								// 			map: map,
+								// 			title: 'Uluru (Ayers Rock)', 
+								// 			icon: image
+								// });
+								// var marker3 = new google.maps.Marker({
+								// 			position: myLatLng3,
+								// 			map: map,
+								// 			title: 'Uluru (Ayers Rock)', 
+								// 			icon: image
+								// });
+								// var marker4 = new google.maps.Marker({
+								// 			position: myLatLng4,
+								// 			map: map,
+								// 			title: 'Uluru (Ayers Rock)', 
+								// 			icon: image
+								// });
+								// var marker5 = new google.maps.Marker({
+								// 			position: myLatLng5,
+								// 			map: map,
+								// 			title: 'Uluru (Ayers Rock)', 
+								// 			icon: image
+								// });
+									// var contentString4 =	'<div class="google-map__window">'
+									// 	+'<p><span>5</span>Участников</p>'
+									// 	+'<p><span>16</span>Проголосовавших</p>'
+									// '</div>';
+								var contentString1 =	'<div class="google-map__window">'
+										+'<p>г. Минск, ул. Мележа 1, офис 1777</p>'
+										+'<p><span>+ 375 29</span> 361 55 87</p>'
+										+'<p><span>+ 375 44</span> 361 59 61</p>'
+										+'<p><a href="mailto:fragrance@gmail.com">fragrance@gmail.com</a></p>'
+									'</div>';
+								// 	var infowindow4 = new google.maps.InfoWindow({
+								// 		content: contentString4
+								// });
+								var infowindow1 = new google.maps.InfoWindow({
+										content: contentString1
+								});
+								google.maps.event.addListener(marker1, 'click', function(){
+										infowindow1.open(map,marker1);
+								});
+								// google.maps.event.addListener(marker2, 'click', function(){
+								// 		infowindow2.open(map,marker2);
+								// });
+								//infowindow1.open(map,marker1);
+								// infowindow2.open(map,marker2);
+
+							}
+								// Asynchronous Loading
+							function loadScript() {
+								var script = document.createElement('script');
+								script.type = 'text/javascript';
+								script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+										'callback=initialize';
+								document.body.appendChild(script);
+							}
+							window.onload = loadScript;
+						</script>
+					</div>
+					<!-- /.map -->
+				</div>
+			</div>
+			<!-- /.contacts -->
+		</div>
+	</div>
+	<!-- /.page -->
+	<div class="push"></div>
+</div>
+<!-- /.out-->
+<div class="footer">
+	<div class="footer__in">
+		<div class="logo">
+			<a href="#">Fragrance World</a>
+		</div>
+		<div class="menu">
+			<ul class="menu__ul">
+				<li class="menu__item is-active"><a href="#">Главная</a></li>
+				<li class="menu__item"><a href="#">Бренд</a></li>
+				<li class="menu__item"><a href="#">Каталог</a></li>
+				<li class="menu__item"><a href="#">Контактная информация</a></li>
+			</ul>
+		</div>
+		<div class="submenu">
+			<ul class="submenu__ul">
+				<li class="submenu__item"><a href="#"><i class="icon icon_opt"></i>Оптовым клиентам</a></li>
+				<li class="submenu__item"><a href="#"><i class="icon icon_pin"></i>Где купить</a></li>
+			</ul>
+		</div>
+		<div class="footer__right">
+			<a href="#" class="create">Flex</a>
+			<div class="social">
+				<ul class="social__ul">
+					<li class="social__item social__item_vk"><a href="#">Vkontakte</a></li>
+					<li class="social__item social__item_fb"><a href="#">Facebook</a></li>
+					<li class="social__item social__item_tw"><a href="#">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.footer -->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
