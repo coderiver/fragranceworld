@@ -91,7 +91,8 @@ body { font-size: 12px; font-family: "PFDinTextCompPro", Arial, sans-serif; line
 .container { width: 863px; margin-left: auto; margin-right: auto; }
 
 .catalog { margin-bottom: 85px; }
-.catalog .catalog__head { border-bottom: 2px solid black; margin-bottom: 10px; }
+.catalog .catalog__head { border-bottom: 2px solid black; margin-bottom: 10px; padding-bottom: 15px; *zoom: 1; }
+.catalog .catalog__head:after { content: " "; display: table; clear: both; }
 .catalog .catalog__group { margin-left: -9px; *zoom: 1; }
 .catalog .catalog__group:after { content: " "; display: table; clear: both; }
 .catalog .catalog__item { float: left; width: 209px; margin-left: 9px; margin-bottom: 10px; height: 303px; margin-top: 9px; }
@@ -107,6 +108,22 @@ body { font-size: 12px; font-family: "PFDinTextCompPro", Arial, sans-serif; line
 .paginator li { display: inline-block; vertical-align: top; padding: 0 5px; }
 .paginator li.is-active a, .paginator li:hover a { background: #ff1419; color: white; }
 .paginator a { display: block; color: black; text-decoration: none; font-size: 14px; font-weight: bold; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; height: 20px; width: 20px; line-height: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+
+.filter { float: left; }
+.filter .filter__folder { position: relative; float: left; font-size: 20px; text-transform: uppercase; height: 25px; line-height: 25px; margin-left: 20px; }
+.filter .filter__folder:before { position: absolute; top: 0; right: 100%; margin-right: 7px; content: "/"; }
+.filter .filter__folder:first-child { margin-left: 0; }
+.filter .filter__folder:first-child:before { content: none; }
+.filter .filter__folder:hover a { border: none; }
+.filter .filter__folder.is-active a { background: black; padding: 0 7px; color: white; border: none; }
+.filter .filter__folder a { display: inline-block; vertical-align: top; color: #262626; text-decoration: none; border-bottom: 1px solid black; }
+
+.subfilter { float: right; }
+.subfilter .subfilter__folder { display: inline-block; text-transform: uppercase; font-size: 20px; margin-left: 36px; }
+.subfilter .subfilter__folder:hover a { border: none; }
+.subfilter .subfilter__folder.is-active { border: 2px solid black; }
+.subfilter .subfilter__folder.is-active a { padding: 0 22px; border: none; }
+.subfilter .subfilter__folder a { display: block; color: black; text-decoration: none; height: 26px; line-height: 28px; border-bottom: 1px dotted black; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
