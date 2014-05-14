@@ -1,10 +1,12 @@
 +font("PFDinTextCompPro", "pfdintextcomppro-regular")
 +font("PFDinTextCompPro Medium", "pfdintextcomppro-medium")
 +font("PFDinTextCompPro Light", "pfdintextcomppro-light")
++font("Xiomara", "xiomara")
 
 $font-dr: 'PFDinTextCompPro', Arial, sans-serif
 $font-dm: 'PFDinTextCompPro Medium', Arial, sans-serif
 $font-dl: 'PFDinTextCompPro Light', Arial, sans-serif
+$font-xi: 'Xiomara', Arial, sans-serif
 $font-base: $font-dr
 
 *
@@ -190,10 +192,14 @@ body
 .breadcrumbs
 	text-align: center
 	margin-bottom: 50px
+	li
+		display: inline-block
+		vertical-align: top
 	a
 		font-size: 16px
 		color: #000
 		text-decoration: none
+		font-family: $font-xi
 
 .h1
 	font-family: $font-dm

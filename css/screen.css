@@ -25,6 +25,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: "PFDinTextCompPro Light"; src: url("../fonts/pfdintextcomppro-light.eot"); src: url("../fonts/pfdintextcomppro-light.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdintextcomppro-light.woff") format("woff"), url("../fonts/pfdintextcomppro-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: "Xiomara"; src: url("../fonts/xiomara.eot"); src: url("../fonts/xiomara.eot?#iefix") format("embedded-opentype"), url("../fonts/xiomara.woff") format("woff"), url("../fonts/xiomara.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -87,7 +89,8 @@ body { font-size: 12px; font-family: "PFDinTextCompPro", Arial, sans-serif; line
 .page .page__header { padding-top: 45px; margin-bottom: 85px; }
 
 .breadcrumbs { text-align: center; margin-bottom: 50px; }
-.breadcrumbs a { font-size: 16px; color: black; text-decoration: none; }
+.breadcrumbs li { display: inline-block; vertical-align: top; }
+.breadcrumbs a { font-size: 16px; color: black; text-decoration: none; font-family: "Xiomara", Arial, sans-serif; }
 
 .h1 { font-family: "PFDinTextCompPro Medium", Arial, sans-serif; text-align: center; font-size: 100px; font-weight: normal; font-style: normal; color: black; line-height: 1; text-transform: uppercase; }
 
