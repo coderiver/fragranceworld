@@ -154,6 +154,7 @@ body { font-size: 12px; font-family: "PFDinTextCompPro", Arial, sans-serif; line
 .contacts .contacts__col.contacts__col_adr:before { background: url('../img/icons-sa2143af093.png') 0 -353px no-repeat; width: 22px; height: 30px; }
 
 .google-map { height: 305px; }
+.google-map.google-map_shops { height: 400px; }
 .google-map .gmnoprint { display: none; }
 .google-map .gm-style-cc { display: none; }
 .google-map .google-map__window { text-transform: uppercase; font-size: 16px; color: black; font-family: "PFDinTextCompPro Medium", Arial, sans-serif; }
@@ -166,12 +167,14 @@ body { font-size: 12px; font-family: "PFDinTextCompPro", Arial, sans-serif; line
 .h-centered a { position: relative; text-transform: uppercase; color: #fffefe; background: #ff1419; font-size: 20px; display: inline-block; height: 48px; line-height: 48px; padding: 0 55px; text-decoration: none; top: -24px; }
 
 .shops { background: white; }
+.shops .shops__head { position: relative; z-index: 1; }
 .shops .shops__content { text-align: left; }
 .shops .shops__group { margin-top: 75px; padding-bottom: 80px; }
 .shops .shops__group > .container { width: 770px; }
 .shops .shops__ul { *zoom: 1; margin-left: -14px; margin-top: -55px; }
 .shops .shops__ul:after { content: " "; display: table; clear: both; }
 .shops .shops__item { display: inline-block; vertical-align: top; width: 180px; margin-left: 14px; margin-top: 55px; }
+.shops .shops__map { position: relative; }
 
 .shop { font-size: 16px; }
 .shop p { color: #919191; }
