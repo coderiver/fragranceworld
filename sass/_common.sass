@@ -49,6 +49,10 @@ body
 		+s(opt)
 	&.icon_pin
 		+s(pin)
+	&.icon_phone
+		+s(phone)
+	&.icon_clock
+		+s(clock)
 
 .out
 	min-height: 100%
@@ -181,17 +185,32 @@ body
 		+sp(flex_a)
 
 .page
-	&.page_contacts
-		.page__header
-			margin-bottom: 20px
 	.page__header
 		padding-top: 45px
 		margin-bottom: 85px
+	.page__title
+		font-family: $font-dm
+		text-align: center
+		font-size: 100px
+		font-weight: normal
+		font-style: normal
+		color: #000
+		line-height: 1
+		text-transform: uppercase
 	.page__content
+		text-align: center
+	&.page_contacts
+		.page__header
+			margin-bottom: 20px
+	&.page_tochki
+		.page__header
+			margin-bottom: 90px
+		.subfilter
+			margin-top: 35px
 
 .breadcrumbs
-	text-align: center
 	margin-bottom: 50px
+	text-align: center
 	li
 		display: inline-block
 		vertical-align: top
@@ -200,16 +219,6 @@ body
 		color: #000
 		text-decoration: none
 		font-family: $font-xi
-
-.h1
-	font-family: $font-dm
-	text-align: center
-	font-size: 100px
-	font-weight: normal
-	font-style: normal
-	color: #000
-	line-height: 1
-	text-transform: uppercase
 
 .container
 	width: 863px
@@ -234,13 +243,13 @@ body
 		margin-bottom: 10px
 		height: 303px
 		margin-top: 9px
+		text-align: center
 
 .item
 	position: relative
 	height: 100%
 	background: #fff
 	padding: 7px 15px
-	text-align: center
 	&:hover
 		.item__hotzone
 			+opacity(1)
@@ -360,6 +369,8 @@ body
 		text-transform: uppercase
 		font-size: 20px
 		margin-left: 36px
+		&:first-child
+			margin-left: 0
 		&:hover
 			a
 				border: none
@@ -375,7 +386,9 @@ body
 			height: 26px
 			line-height: 28px
 			border-bottom: 1px dotted #000
-
+	&.subfilter_centered
+		float: none
+		text-align: center
 .contacts
 	.contacts__row
 		background: #fff
@@ -440,3 +453,77 @@ body
 				text-decoration: none
 	a[title]
 		display: none !important
+
+.h-centered
+	border-top: 2px solid #ff1419
+	height: 1px
+	a
+		// font-family: $font-dm
+		position: relative
+		text-transform: uppercase
+		color: #fffefe
+		background: #ff1419
+		font-size: 20px
+		display: inline-block
+		height: 48px
+		line-height: 48px
+		padding: 0 55px
+		text-decoration: none
+		top: -24px
+
+.shops
+	// .shops__head
+	background: #fff
+	.shops__content
+		// min-height: 400px //tmp
+		text-align: left
+	.shops__group
+		margin-top: 75px
+		padding-bottom: 80px
+		> .container
+			width: 770px
+	.shops__ul
+		+clr
+		margin-left: -14px
+		margin-top: -55px
+	.shops__item
+		display: inline-block
+		vertical-align: top
+		// padding: 0 20px
+		width: 180px
+		margin-left: 14px
+		margin-top: 55px
+
+.shop
+	font-size: 16px
+	p
+		color: #919191
+	.shop__phone,
+	.shop__clock
+		position: relative
+		padding-left: 20px
+		&:before
+			position: absolute
+			top: 5px
+			left: 0
+			content: ""
+		&.shop__phone
+			&:before
+				+s(phone)
+		&.shop__clock
+			&:before
+				+s(clock)
+	.shop__title
+		text-transform: uppercase
+		color: #000
+
+
+
+
+
+
+
+
+
+
+
