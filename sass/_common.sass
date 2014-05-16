@@ -9,6 +9,27 @@ $font-dl: 'PFDinTextCompPro Light', Arial, sans-serif
 $font-xi: 'Xiomara', Arial, sans-serif
 $font-base: $font-dr
 
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+=justify-child
+	display: inline-block
+	line-height: normal
+	vertical-align: top
+	font-size: 14px
+
+
 *
 	+box
 	&:before,
@@ -53,6 +74,10 @@ body
 		+s(phone)
 	&.icon_clock
 		+s(clock)
+	&.icon_mail
+		+s(mail)
+	&.icon_tel
+		+s(tel)
 
 .out
 	min-height: 100%
@@ -184,19 +209,34 @@ body
 	&:hover
 		+sp(flex_a)
 
+
+h1, h2, h3, .h1, .h2, .h3
+	font-family: $font-dm
+	font-weight: normal
+	font-style: normal
+	color: #000
+	line-height: 1
+	margin-bottom: 1em
+	text-transform: uppercase
+
+h1, .h1
+	font-size: 100px
+h2, .h2
+	font-size: 30px
+h3, .h3
+	font-size: 24px
+
+.lead
+	font-family: $font-dm
+	text-transform: uppercase
+
 .page
 	.page__header
 		padding-top: 45px
 		margin-bottom: 85px
-	.page__title
-		font-family: $font-dm
+	.h1
 		text-align: center
-		font-size: 100px
-		font-weight: normal
-		font-style: normal
-		color: #000
-		line-height: 1
-		text-transform: uppercase
+		margin-bottom: 0
 	.page__content
 		text-align: center
 	&.page_contacts
@@ -221,12 +261,14 @@ body
 		font-family: $font-xi
 
 .container
-	width: 863px
+	width: 980px
 	margin-left: auto
 	margin-right: auto
 
 .catalog
 	margin-bottom: 85px
+	.container
+		padding: 0 58px
 	.catalog__head
 		border-bottom: 2px solid #000
 		margin-bottom: 10px
@@ -524,13 +566,86 @@ body
 		text-transform: uppercase
 		color: #000
 
+.content
+	margin-bottom: 105px
+	font-size: 16px
+	p
+		margin-bottom: 1em
+	.l
+		margin-bottom: 40px
+	.l-col1
+		padding-left: 28px
+		p
+			margin-right: 65px
+		figure
+			margin-bottom: 30px
+	.l-col2
+		padding-left: 40px
+	.article-aside
+		margin-left: -65px
+		&.article-aside_info
+			background: #fff
+			padding: 50px 25px 50px 60px
+			width: 640px
+		.article-aside__contacts
+			text-transform: uppercase
+			font-family: $font-dm
+			p
+				color: #000 !important
+			a
+				color: inherit
+				&:hover
+					text-decoration: none
+			.marked
+				color: #494949
+				font-family: $font-dl
+		.icon
+			margin-right: 10px
+		ol, ul
+			list-style: none
+			font-size: 0
+			+justify
+			margin-left: -35px
+			li
+				+justify-child
+				position: relative
+				padding-left: 35px
+				width: 46%
+				display: inline-block
+				vertical-align: top
+				font-size: 16px
+				white-space: normal
+				text-align: left
+			p
+				margin-bottom: 0
+				color: #494949
+	ol
+		counter-reset: point
+		margin-bottom: 60px
+		li
+			&:before
+				position: absolute
+				top: -.3em
+				left: 0
+				color: #000
+				line-height: 1
+				font-size: 36px
+				content: counter(point)"\002F"
+				counter-increment: point 1
+	.crzytxt
+		padding-left: 43px
+		p
+			padding-left: 107px
 
-
-
-
-
-
-
-
+.pseudo
+	text-decoration: none !important
+	border-width: 0 0 1px
+	border-style: dotted
+	border-color: inherit
+	&:hover
+		text-decoration: none !important
+		border-width: 0 0 1px
+		border-style: dotted
+		border-color: transparent
 
 
