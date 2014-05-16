@@ -648,4 +648,81 @@ h3, .h3
 		border-style: dotted
 		border-color: transparent
 
+.popup
+	background: white
+	padding: 20px 30px
+	text-align: left
+	max-width: 535px
+	margin: 40px auto
+	position: relative
+	font-size: 16px
+	padding: 15px
+	// height: 645px //TMP
+	.mfp-close
+		+s(popup_close)
+		+hidetext
+		position: absolute
+		top: 30px
+		right: 32px
+	.popup__title
+		font-size: 40px
+		font-family: $font-dm
+		color: #000
+		line-height: 1
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 65px
+	.popup__in
+		padding: 25px 25px 80px
+		border: 1px solid #000
+	.popup__form
+		width: 356px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		.btn
+			margin-top: 35px
 
+
+
+.input,
+.textarea
+	display: block
+	text-align: left
+	width: 100%
+	font-size: 16px
+	text-transform: uppercase
+	color: #000
+	font-family: $font-dl
+	margin-bottom: 25px
+	+placeholder-color(#000)
+	&:focus
+		+placeholder-color(transparent)
+.input
+	padding: 13px 0
+	border-bottom: 2px solid #000
+.textarea
+	height: 110px
+	padding-top: 7px
+	line-height: 34px
+	overflow: hidden
+	outline: none
+	border: none
+	font-size: 16px
+	background: url(../img/textarea.jpg)
+	resize: none
+
+
+.btn
+	background: #ff1419
+	border: none
+	color: #fff
+	text-transform: uppercase
+	cursor: pointer
+	text-decoration: none
+	// height: 48px
+	line-height: 20px
+	font-size: 20px
+	font-family: $font-dr
+	padding: 15px 55px 13px
+	+font-smoothing
