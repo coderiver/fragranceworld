@@ -224,8 +224,16 @@ h3, .h3 { font-size: 24px; }
 .pseudo { text-decoration: none !important; border-width: 0 0 1px; border-style: dotted; border-color: inherit; }
 .pseudo:hover { text-decoration: none !important; border-width: 0 0 1px; border-style: dotted; border-color: transparent; }
 
-.popup { background: white; padding: 20px 30px; text-align: left; max-width: 535px; margin: 40px auto; position: relative; font-size: 16px; padding: 15px; }
-.popup .mfp-close { background: url('../img/icons-s00eea745f2.png') 0 -577px no-repeat; width: 34px; height: 34px; font: 0/0 a; text-shadow: none; color: transparent; position: absolute; top: 30px; right: 32px; }
+.has-popup { overflow: hidden; }
+
+.overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(51, 51, 51, 0.5); z-index: 1000; display: none; }
+
+.popup-wrap { position: fixed; top: 0; left: 0; right: 0; height: 0; z-index: -1; -ms-overflow-y: scroll; overflow-y: scroll; -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.popup-wrap.is-open { z-index: 1001; height: 100%; }
+.popup-wrap.is-open .popup.is-open { position: relative; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.popup { position: absolute; margin-left: -268px; margin-top: 10px; margin-bottom: 10px; left: 50%; padding: 15px; font-size: 16px; text-align: left; width: 536px; background: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transform: translate3d(0, -150%, 0); -moz-transform: translate3d(0, -150%, 0); -ms-transform: translate3d(0, -150%, 0); -o-transform: translate3d(0, -150%, 0); transform: translate3d(0, -150%, 0); -webkit-transition: -webkit-transform 0.3s ease-in; -moz-transition: -moz-transform 0.3s ease-in; -o-transition: -o-transform 0.3s ease-in; transition: transform 0.3s ease-in; }
+.popup .mfp-close, .popup .popup__close { position: absolute; top: 30px; right: 32px; cursor: pointer; background: url('../img/icons-s00eea745f2.png') 0 -577px no-repeat; width: 34px; height: 34px; font: 0/0 a; text-shadow: none; color: transparent; }
 .popup .popup__title { font-size: 40px; font-family: "PFDinTextCompPro Medium", Arial, sans-serif; color: black; line-height: 1; text-transform: uppercase; text-align: center; margin-bottom: 65px; }
 .popup .popup__in { padding: 25px 25px 80px; border: 1px solid black; }
 .popup .popup__form { width: 356px; margin-left: auto; margin-right: auto; text-align: center; }

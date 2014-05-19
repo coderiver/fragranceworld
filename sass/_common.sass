@@ -648,22 +648,73 @@ h3, .h3
 		border-style: dotted
 		border-color: transparent
 
+
+.has-popup
+	overflow: hidden
+
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(#333, .5)
+	// z-index: -1
+	z-index: 1000
+	display: none
+	// +opacity(1)
+	// +transition(all .3s linear)
+	// &.is-visible
+	// 	+opacity(1)
+
+.popup-wrap
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	height: 0
+	z-index: -1
+	-ms-overflow-y: scroll 
+	overflow-y: scroll 
+	+transition(all .2s ease-in)
+	&.is-open
+		z-index: 1001
+		// bottom: 0
+		height: 100%
+		.popup.is-open
+			position: relative
+			// z-index: 1001
+			+opacity(1)
+			// height: auto
+			+transform(translate3d(0,0,0))
+
 .popup
-	background: white
-	padding: 20px 30px
-	text-align: left
-	max-width: 535px
-	margin: 40px auto
-	position: relative
-	font-size: 16px
+	position: absolute
+	margin-left: -268px
+	margin-top: 10px
+	margin-bottom: 10px
+	left: 50%
 	padding: 15px
+	font-size: 16px
+	text-align: left
+	width: 536px
+	// height: 0
+	background: white
 	// height: 645px //TMP
-	.mfp-close
-		+s(popup_close)
-		+hidetext
+	// z-index: -1
+	+opacity(0)
+	+transform(translate3d(0,-150%,0))
+	+transition(transform .3s ease-in)
+	// +gpu
+
+	.mfp-close,
+	.popup__close
 		position: absolute
 		top: 30px
 		right: 32px
+		cursor: pointer
+		+s(popup_close)
+		+hidetext
 	.popup__title
 		font-size: 40px
 		font-family: $font-dm
@@ -682,8 +733,6 @@ h3, .h3
 		text-align: center
 		.btn
 			margin-top: 35px
-
-
 
 .input,
 .textarea

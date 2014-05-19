@@ -9,20 +9,36 @@ head.ready(function() {
 		sliderHeight();
 	});
 
-	$('.popup-with-zoom-anim').magnificPopup({
-			type: 'inline',
+	function popup() {
+		// $(".btn-popup").click(function (){
+		// var page = $(this).attr("href");
+		// 	$('html, body').animate({
+		// 		scrollTop: $(page).offset().top
+		// 	}, 500);
+		// return false;
+		// });
 
-			fixedContentPos: false,
-			fixedBgPos: true,
-
-			overflowY: 'auto',
-
-			closeBtnInside: true,
-			preloader: false,
-
-			midClick: true,
-			removalDelay: 300,
-			mainClass: 'my-mfp-zoom-in'
+		$(' .btn-popup ').on('click', function(event) {
+			var id = $(this).attr("href");
+			$(' .popup-wrap ').addClass(' is-open ');
+			$(id).addClass('is-open');
+			// $(' .popup ').removeClass('is-open');
+			// $(' .overlay ').addClass(' is-visible ');
+			$(' .overlay ').fadeIn('fast');
+			$(' body ').addClass(' has-popup ');
+			return false;
 		});
+		$('.popup').on('click', function() {
+			event.stopPropagation();
+		});
+		$(' .popup__close, .popup-wrap ').on('click', function() {
+			$(' .popup-wrap ').removeClass(' is-open ');
+			// $(' .overlay ').removeClass(' is-visible ');
+			$(' .overlay ').fadeOut('fast');
+			$(' body ').removeClass(' has-popup ');
+			$(' .popup ').removeClass('is-open');
+			return false;
+		});
+	} popup();
 
 });

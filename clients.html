@@ -7,7 +7,6 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 </head>
 <body>
-
 <div class="out">
 	<div class="page">
 		<div class="page__header">
@@ -46,7 +45,10 @@
 										<p><i class="icon icon_tel"></i><span class="marked">+ 375 29</span> 361 55 87</p>
 									</li>
 									<li>
-										<p><i class="icon icon_mail"></i><a class="pseudo popup-with-zoom-anim" href="#popup">Форма обратной связи</a></p>
+										<p><i class="icon icon_mail"></i><a class="pseudo btn-popup" href="#feedback">Форма обратной связи</a></p>
+									</li>
+									<li>
+										<p><i class="icon icon_mail"></i><a class="pseudo btn-popup" href="#feedback2">Форма обратной связи</a></p>
 									</li>
 								</ul>
 							</div>
@@ -93,21 +95,44 @@
 </div>
 <!-- /.footer -->
 
-<div id="popup" class="popup zoom-anim-dialog mfp-hide">
-	<div class="popup__in">
-		<div class="popup__title">Форма обратной связи</div>
-		<div class="popup__content">
-			<div class="popup__form">
-				<form action="#">
-					<input class="input" type="text" placeholder="Контактное лицо">
-					<input class="input" type="text" placeholder="Название организации">
-					<input class="input" type="text" placeholder="Телефон">
-					<textarea class="textarea" cols="30" rows="10" placeholder="Комментарий"></textarea>
-					<button type="submit" class="btn">Отправить</button>
-				</form>
+<div class="overlay"></div>
+<!-- /.overlay -->
+<div class="popup-wrap">
+	<div id="feedback" class="popup">
+		<div class="popup__close"></div>
+		<div class="popup__in">
+			<div class="popup__title">Форма обратной связи</div>
+			<div class="popup__content">
+				<div class="popup__form">
+					<form action="#">
+						<input class="input" type="text" placeholder="Контактное лицо">
+						<input class="input" type="text" placeholder="Название организации">
+						<input class="input" type="text" placeholder="Телефон">
+						<textarea class="textarea" cols="30" rows="10" placeholder="Комментарий"></textarea>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="feedback2" class="popup">
+		<div class="popup__close"></div>
+		<div class="popup__in">
+			<div class="popup__title">Форма обратной связи 2</div>
+			<div class="popup__content">
+				<div class="popup__form">
+					<form action="#">
+						<input class="input" type="text" placeholder="Контактное лицо">
+						<input class="input" type="text" placeholder="Название организации">
+						<input class="input" type="text" placeholder="Телефон">
+						<textarea class="textarea" cols="30" rows="10" placeholder="Комментарий"></textarea>
+						<button type="submit" class="btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.popup -->
 </div>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
