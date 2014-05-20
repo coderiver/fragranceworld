@@ -258,6 +258,7 @@ body
 		text-transform: uppercase
 		margin-right: 0
 		border: 1px solid #eaeaea
+		+transition(all .2s linear)
 		a
 			display: block
 			height: 40px
@@ -266,6 +267,7 @@ body
 			color: inherit
 			text-decoration: none
 			border: 2px solid transparent
+			+transition(all .2s linear)
 		&:first-child
 			margin-right: -1px
 		&:hover
@@ -294,6 +296,9 @@ body
 		display: block
 		float: left
 		+hidetext
+		margin-left: 19px
+		&:first-child
+			margin-left: 0
 		a
 			display: block
 			height: 100%
@@ -401,7 +406,7 @@ h3, .h3
 			+opacity(1)
 		.item__pic
 			&:before
-				content: ""
+				background: rgba(#fff, .9)
 	.item__hotzone
 		position: absolute
 		top: 0
@@ -411,6 +416,7 @@ h3, .h3
 		border: 3px solid #000
 		z-index: 1
 		+opacity(0)
+		+transition(all .3s linear)
 	.item__hotzonemoar
 		position: absolute
 		top: 100px
@@ -432,8 +438,9 @@ h3, .h3
 			left: 0
 			width: 100%
 			height: 100%
-			background: rgba(#fff, .9)
-			content: none
+			background: rgba(#fff, 0)
+			content: ""
+			+transition(all .3s linear)
 		img
 			display: inline-block
 			vertical-align: middle
