@@ -7,31 +7,107 @@
 	<link rel="stylesheet" href="css/pace.css">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 </head>
-<body class="landing">
+<body class="has-slider">
 	<div class="logo_load"></div>
-<!-- <div class="wholesite"> -->
-	<div class="slider js-slider">
-		<div class="slider__slide slider__slide_1">
-			<div class="slider__pic" style="background-image: url(img/slidebg_1.jpg)"></div>
-			<div class="slider__pic slider__pic_blured" style="background-image: url(img/slidebg_1_blur.jpg)"></div>
-			<div class="slider__main">
-				<div class="slider__logo"></div>
-				<div class="slider__title">
-					Качественная арабская
-					<span>парфюмерия</span>
+
+	<div class="slider">
+		<div class="slider__paginator">
+			<ul>
+				<li><a href="#slide1"><span></span></a></li>
+				<li><a href="#slide2"><span></span></a></li>
+				<li><a href="#slide3"><span></span></a></li>
+				<li><a href="#slide4"><span></span></a></li>
+				<li><a href="#slide5"><span></span></a></li>
+				<li><a href="#slide6"><span></span></a></li>
+			</ul>
+		</div>
+		<!-- /.slider__paginator -->
+		<div class="slider__slides">
+			<!-- 1 -->
+			<div id="slide1" class="slider__el slider__el_1">
+				<div class="slider__bg"></div>
+
+				<div class="slider__nav">
+					<a href="#slide2" class="slider__next"><span>Коллекции</span></a>
 				</div>
-				<div class="slider__next">
-					Коллекции
-					<i class="slider__arrow"></i>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__logo"></div>
+					<div class="slider__title">
+						<span>Качественная арабская</span> парфюмерия
+					</div>
 				</div>
+				<!-- /.slider__main -->
+			</div>
+			<!-- 2 -->
+			<div id="slide2" class="slider__el slider__el_2">
+				<div class="slider__nav">
+					<a href="#slide1" class="slider__prev"></a>
+					<a href="#slide3" class="slider__next"></a>
+				</div>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__title">Фруктовая</div>
+					<div class="slider__subtitle">Коллекция</div>
+				</div>
+				<!-- /.slider__main -->
+			</div>
+			<!-- 3 -->
+			<div id="slide3" class="slider__el slider__el_3">
+				<div class="slider__nav">
+					<a href="#slide2" class="slider__prev"></a>
+					<a href="#slide4" class="slider__next"></a>
+				</div>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__title">Свежая</div>
+					<div class="slider__subtitle">Коллекция</div>
+				</div>
+				<!-- /.slider__main -->
+			</div>
+			<!-- 4 -->
+			<div id="slide4" class="slider__el slider__el_4">
+				<div class="slider__nav">
+					<a href="#slide3" class="slider__prev"></a>
+					<a href="#slide5" class="slider__next"></a>
+				</div>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__title">Спортивная</div>
+					<div class="slider__subtitle">Коллекция</div>
+				</div>
+				<!-- /.slider__main -->
+			</div>
+			<!-- 5 -->
+			<div id="slide5" class="slider__el slider__el_5">
+				<div class="slider__nav">
+					<a href="#slide4" class="slider__prev"></a>
+					<a href="#slide6" class="slider__next"></a>
+				</div>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__title">Гламурная</div>
+					<div class="slider__subtitle">Коллекция</div>
+				</div>
+				<!-- /.slider__main -->
+			</div>
+			<!-- 6 -->
+			<div id="slide6" class="slider__el slider__el_6">
+				<div class="slider__nav">
+					<a href="#slide5" class="slider__prev"></a>
+				</div>
+				<!-- /.slider__nav -->
+				<div class="slider__main">
+					<div class="slider__title">Деловая</div>
+					<div class="slider__subtitle">Коллекция</div>
+				</div>
+				<!-- /.slider__main -->
 			</div>
 		</div>
+		<!-- /.slider__slides -->
 	</div>
 	<!-- /.slider -->
-	<div class="out">
-		<div class="push"></div>
-	</div>
-	<!-- /.out-->
+
 	<div class="footer">
 		<div class="footer__in">
 			<div class="logo">
@@ -64,8 +140,6 @@
 		</div>
 	</div>
 	<!-- /.footer -->
-<!-- </div> -->
-<!-- /.wholesite -->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

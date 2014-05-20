@@ -1,0 +1,181 @@
+.has-slider
+	background: #aa8c70
+	overflow: hidden
+	.footer
+		position: fixed
+		right: 0
+		bottom: 0
+		left: 0
+		+box-shadow(0 0 0 rgba(#000,.5))
+
+.slider
+	height: 100% !important
+	height: 100%
+	.slider__paginator
+		position: fixed
+		z-index: 1
+		top: 50%
+		margin-top: -66px
+		left: 55px
+		+opacity(0)
+		+transition(opacity 1s ease-in)
+		+transition-delay(2s)
+		.pace-done &
+			+opacity(1)
+		li
+			display: block
+			&.is-active
+				a
+					border: 2px solid #fff
+		a
+			display: block
+			padding: 5px
+			border: 2px solid transparent
+			+border-radius(50%)
+			span
+				display: block
+				height: 8px
+				width: 8px
+				background-color: #fff
+				+border-radius(50%)
+	.slider__prev,
+	.slider__next
+		position: absolute
+		left: 50%
+		margin-left: -22px
+		cursor: pointer
+		text-decoration: none
+		color: #fff
+		+opacity(0)
+		+transition(opacity 1s ease-in)
+		+transition-delay(2.4s)
+		.pace-done &
+			+opacity(1)
+		span
+			position: absolute
+			top: -60px
+			left: 50%
+			bottom: 100%
+			display: block
+			width: 500px
+			text-align: center
+			margin-left: -250px
+			color: #fff
+			font-family: $font-xi
+			font-size: 30px
+			cursor: pointer
+	.slider__prev
+		top: 80px
+		+rotate(180)
+		+s(next)
+	.slider__next
+		bottom: 105px
+		+s(next)
+	.slider__slides
+		float: left
+		margin: 0 auto
+		position: relative
+		height: 100%
+		width: 100%
+		+transition(all .3s linear)
+	.slider__main
+		position: relative
+		width: 700px
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+		margin: -10px auto 0
+		color: #fff
+	.slider__logo
+		+s(logo_main)
+		margin: 20px auto 30px
+	.slider__title
+		text-transform: uppercase
+		font-family: $font-dm
+		line-height: 1.2
+		font-size: 160px
+		margin-bottom: 20px
+		letter-spacing: normal
+		span
+			display: block
+			font-family: $font-dxt
+			font-size: 24px
+			letter-spacing: 0.4em
+	.slider__subtitle
+		color: #fff
+		font-family: $font-xi
+		font-size: 30px
+	.slider__el
+		position: relative
+		height: 100%
+		min-height: 550px
+		width: 100%
+		text-align: center
+		overflow: hidden
+		background-attachment: fixed
+		+cover
+
+	.slider__el_1
+		background-image: url(../img/slidebg_1.jpg)
+		line-height: 1 !important
+		.slider__main
+			margin-top: 0
+			+opacity(0)
+			+transition(opacity 1s ease-in)
+			+transition-delay(2s)
+			.pace-done &
+				+opacity(1)
+		.slider__title
+			font-size: 140px
+		.slider__bg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-image: url(../img/slidebg_1_blur.jpg)
+			background-attachment: fixed
+			+cover
+			+opacity(0)
+			+transition(opacity 2s ease-in)
+			+transition-delay(.1s)
+			.pace-done &
+				+opacity(1)
+
+	.slider__el_2
+		background-image: url(../img/slidebg_fruit.jpg)
+		.slider__subtitle
+			color: #493d0e
+
+	.slider__el_3
+		background-image: url(../img/slidebg_fresh.jpg)
+		.slider__subtitle
+			color: #00814e
+
+	.slider__el_4
+		background-image: url(../img/slidebg_sport.jpg)
+		.slider__subtitle
+			color: #fff
+
+	.slider__el_5
+		background-image: url(../img/slidebg_glam.jpg)
+		.slider__subtitle
+			color: #fff
+
+	.slider__el_6
+		background-image: url(../img/slidebg_casual.jpg)
+		.slider__subtitle
+			color: #fff
+
+
+
+
+
+
+
+
+
+
+
+
+

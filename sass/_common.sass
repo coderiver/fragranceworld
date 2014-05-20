@@ -46,31 +46,22 @@ body
 	+font-smoothing
 	background: #efefef
 	min-width: 1024px
-	&.landing
-		background: #aa8c70
-		&.pace-running
-			.logo_load
-				+opacity(1)
-				+transition(all 1s ease-in-out)
-				// +scale(1)
-			.slider, .out, .footer
-				+opacity(0)
-		&.pace-done
-			.slider, .out, .footer
-				+opacity(1)
-				+transition(opacity .6s ease-in)
-				+transition-delay(1s)
-			.logo_load
-				+opacity(0)
-				+transition(all .6s ease-in-out)
-				+scale(0)
-			.slider__slide1
-				-webkit-filter: blur(0)
-				+gpu
-				&:hover
-					-webkit-filter: blur(6px)
-					+transition(all .8s linear)
-					// +transition-delay(1s)
+	&.pace-running
+		.logo_load
+			+opacity(1)
+			+transition(all 1s ease-in-out)
+			// +scale(1)
+		.slider, .out, .footer
+			+opacity(0)
+	&.pace-done
+		.slider, .out, .footer
+			+opacity(1)
+			+transition(opacity .6s ease-in)
+			+transition-delay(1s)
+		.logo_load
+			+opacity(0)
+			+transition(all .6s ease-in-out)
+			+scale(0)
 
 .pace-running
 	.out, .footer
@@ -92,76 +83,84 @@ body
 	+transition(all 1s ease-in-out)
 
 
-.slider
-	position: absolute
-	top: 0
-	right: 0
-	left: 0
-	z-index: 1
-	// min-height: 500px !important
-	.slider__slide
-		+cover
-		position: absolute
-		top: 0
-		right: 0
-		width: 100%
-		height: 100%
-		&.slider__slide_1
-			.slider__pic
-				position: absolute
-				top: 0
-				left: 0
-				right: 0
-				bottom: 0
-				+cover
-				&.slider__pic_blured
-					+opacity(0)
-					.pace-done &
-						+opacity(1)
-						+transition(opacity 2s ease-in)
-						+transition-delay(.1s)
-			.slider__main
-				+opacity(0)
-				.pace-done &
-					+opacity(1)
-					+transition(opacity .7s ease-in)
-					+transition-delay(2.2s)
+// .slider
+// 	position: absolute
+// 	top: 0
+// 	right: 0
+// 	left: 0
+// 	// min-height: 500px !important
+// 	.slider__el
+// 		+cover
+// 		position: relative
+// 		top: 0
+// 		right: 0
+// 		width: 100%
+// 		height: 100%
+// 		+opacity(0)
+// 		&.is-active
+// 			+opacity(1)
+// 			+transition(opacity 1s ease-in)
+// 			z-index: 1
+// 		&.slider__el_1
+// 			&.is-active
+// 				z-index: 100
+// 			.slider__pic
+// 				&.slider__pic_blured
+// 					+opacity(0)
+// 					.pace-done &
+// 						+opacity(1)
+// 						+transition(opacity 2s ease-in)
+// 						// +transition-delay(.1s)
+// 			.slider__main
+// 				+opacity(0)
+// 				.pace-done &
+// 					+opacity(1)
+// 					+transition(opacity .7s ease-in)
+// 					+transition-delay(2.1s)
 
+// 	.slider__pic
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		right: 0
+// 		bottom: 0
+// 		+cover
+// 		+opacity(1)
+// 	.slider__main
+// 		width: 700px
+// 		margin: 20px auto
+// 		position: relative
+// 		color: #fff
+// 		text-align: center
+// 	.slider__logo
+// 		+s(logo_main)
+// 		margin-left: auto
+// 		margin-right: auto
+// 		margin-bottom: 30px
+// 	.slider__title
+// 		text-transform: uppercase
+// 		font-family: $font-dm
+// 		line-height: 1.2
+// 		font-size: 140px
+// 		margin-bottom: 20px
+// 		letter-spacing: normal
+// 		span
+// 			display: block
+// 			font-family: $font-dxt
+// 			font-size: 24px
+// 			letter-spacing: 0.4em
+// 	.slider__next
+// 		color: #fff
+// 		font-family: $font-xi
+// 		font-size: 30px
+// 		cursor: pointer
+// 	.slider__arrow
+// 		display: block
+// 		// +s(sl_arr)
+// 		margin-top: 20px
+// 		margin-left: auto
+// 		margin-right: auto
 
-	.slider__main
-		width: 700px
-		margin: 20px auto
-		position: relative
-		color: #fff
-		text-align: center
-	.slider__logo
-		+s(logo_main)
-		margin-left: auto
-		margin-right: auto
-		margin-bottom: 30px
-	.slider__title
-		text-transform: uppercase
-		font-family: $font-dxt
-		font-size: 24px
-		line-height: 1.2
-		letter-spacing: 0.4em
-		margin-bottom: 20px
-		span
-			display: block
-			font-family: $font-dm
-			font-size: 140px
-			letter-spacing: normal
-	.slider__next
-		color: #fff
-		font-family: $font-xi
-		font-size: 30px
-		cursor: pointer
-	.slider__arrow
-		display: block
-		+s(sl_arr)
-		margin-top: 20px
-		margin-left: auto
-		margin-right: auto
 %in
 	min-width: 1024px
 	margin: 0 auto
