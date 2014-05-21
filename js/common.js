@@ -124,5 +124,12 @@ $(document).ready(function() {
 
 	} slider();
 
+	$('.slider').stellar({
+		horizontalScrolling: false,
+		// verticalScrolling: true,
+		// verticalOffset: 0,
+		hideDistantElements: false
+	});
 
 });
+

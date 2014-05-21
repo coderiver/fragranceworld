@@ -7,6 +7,7 @@
 		bottom: 0
 		left: 0
 		+box-shadow(0 0 0 rgba(#000,.5))
+		z-index: 1000
 
 .slider
 	height: 100% !important
@@ -113,6 +114,7 @@
 		text-align: center
 		overflow: hidden
 		background-attachment: fixed
+		// background-position: 50% 0
 		+cover
 		// +gpu
 		&:first-child
@@ -174,6 +176,20 @@
 		.slider__subtitle
 			color: #fff
 
+#parallax1,
+#parallax2,
+#parallax3,
+#parallax4
+	position: absolute
+	left: 50%
+#parallax1
+	margin-left: -800px
+#parallax2
+	margin-left: -900px
+#parallax3
+	margin-left: 500px
+#parallax4
+	margin-left: -600px
 
 
 
