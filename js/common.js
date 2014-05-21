@@ -1,5 +1,9 @@
 head.ready(function() {
 
+	paceOptions = {
+		elements: true
+	};
+
 	function popup() {
 		$(' .btn-popup ').on('click', function(event) {
 			var id = $(this).attr("href");
@@ -34,7 +38,8 @@ head.ready(function() {
 				var pos = $(this).offset().top;
 				var id = $(this).attr('id');
 				if( $(window).scrollTop() >= (pos)){
-					// $(this).addClass('is-animated');
+					$('.slider__el').removeClass('is-animated');
+					$(this).addClass('is-animated');
 					$('.slider__paginator li').removeClass('is-active');
 					$('[href = #'+id+']').parent().addClass('is-active');
 				}
@@ -58,6 +63,7 @@ head.ready(function() {
 
 		// add 'is-active' class to the first pagination
 		$('.slider__paginator li').first().addClass('is-active');
+		$('.slider__el').first().addClass('is-animated');
 
 		// slider prev/next navigation
 		$(' .slider__next ').click(function() {
@@ -82,14 +88,12 @@ head.ready(function() {
 			}
 		});
 
-		// $('#nav').onePageNav();
 
 
 		var $current, flag = false;
-
 		$('body.has-slider').mousewheel(function(event, delta) {
 				if (flag) { return false; }
-				$current = $('.slider__el.is-current');
+				$current = $('.slider__el.is-animated');
 
 				if (delta > 0) {
 						$prev = $current.prev();
@@ -101,8 +105,8 @@ head.ready(function() {
 												flag = false;
 										}
 								});
-								$current.removeClass('is-current');
-								$prev.addClass('is-current');
+								// $current.removeClass('is-current');
+								// $prev.addClass('is-current');
 						}
 				} else {
 						$next = $current.next();
@@ -114,8 +118,8 @@ head.ready(function() {
 												flag = false;
 										}
 								});
-								$current.removeClass('is-current');
-								$next.addClass('is-current');
+								// $current.removeClass('is-current');
+								// $next.addClass('is-current');
 						}
 				}
 
