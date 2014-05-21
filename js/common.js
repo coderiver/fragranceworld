@@ -1,10 +1,14 @@
-head.ready(function() {
-
+$(window).load(function() {
 	$('body').addClass('pace-running');
-
 	paceOptions = {
 		elements: true
 	};
+});
+
+head.ready(function() {
+
+
+
 
 	function popup() {
 		$(' .btn-popup ').on('click', function(event) {
