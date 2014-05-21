@@ -1,5 +1,7 @@
 head.ready(function() {
 
+	$('body').addClass('pace-running');
+
 	paceOptions = {
 		elements: true
 	};
