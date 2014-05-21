@@ -28,23 +28,6 @@ head.ready(function() {
 		var el_height = $('.slider__el').height();
 		$('.slider__el').css('line-height', el_height + 'px');
 
-		// slider paginator
-		$(' .slider__paginator a ').click(function (e){
-			e.preventDefault();
-
-			var target = this.hash,
-					$target = $(target);
-
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 500, 'swing', function () {
-					window.location.hash = target;
-			});
-		});
-
-		// add 'is-active' class to the first pagination
-		$('.slider__paginator li').first().addClass('is-active');
-
 		// switch 'is-active' class for paginator on scroll
 		function sliderScroll(){
 			$(' .slider__el ').each(function(){
@@ -62,18 +45,41 @@ head.ready(function() {
 			sliderScroll();
 		});
 
-		// slider prev/next navigation
-		$(' .slider__nav a ').click(function (e){
+		// slider paginator
+		$(' .slider__paginator a ').click(function (e){
 			e.preventDefault();
 
-			var target = this.hash,
-					$target = $(target);
+			var page = $(this).attr("href");
 
 			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 500, 'swing', function () {
-					window.location.hash = target;
-			});
+				'scrollTop': $(page).offset().top
+			}, 500, 'swing');
+		});
+
+		// add 'is-active' class to the first pagination
+		$('.slider__paginator li').first().addClass('is-active');
+
+		// slider prev/next navigation
+		$(' .slider__next ').click(function() {
+			$('.slider__paginator').find('li.is-active').next().find('a').trigger('click');
+			return false;
+		});
+
+		$(' .slider__prev ').click(function() {
+			$('.slider__paginator').find('li.is-active').prev().find('a').trigger('click');
+			return false;
+		});
+
+		$(document.documentElement).keyup(function (e) {
+			if (e.keyCode == 40)
+			{
+				$('.slider__paginator').find('li.is-active').next().find('a').trigger('click');
+			}
+
+			if (e.keyCode == 38)
+			{
+				$('.slider__paginator').find('li.is-active').prev().find('a').trigger('click');
+			}
 		});
 
 	} slider();

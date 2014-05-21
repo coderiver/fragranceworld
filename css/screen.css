@@ -288,6 +288,8 @@ h3, .h3 { font-size: 24px; }
 .slider .slider__title span { display: block; font-family: "PFDinTextCompPro XThin", Arial, sans-serif; font-size: 24px; letter-spacing: 0.4em; }
 .slider .slider__subtitle { color: white; font-family: "Xiomara", Arial, sans-serif; font-size: 30px; }
 .slider .slider__el { position: relative; height: 100%; min-height: 550px; width: 100%; text-align: center; overflow: hidden; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.slider .slider__el:first-child .slider__prev { display: none; }
+.slider .slider__el:last-child .slider__next { display: none; }
 .slider .slider__el_1 { background-image: url(../img/slidebg_1.jpg); line-height: 1 !important; }
 .slider .slider__el_1 .slider__main { margin-top: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 1s ease-in; -moz-transition: opacity 1s ease-in; -o-transition: opacity 1s ease-in; transition: opacity 1s ease-in; -webkit-transition-delay: 2s; -moz-transition-delay: 2s; -o-transition-delay: 2s; transition-delay: 2s; }
 .pace-done .slider .slider__el_1 .slider__main { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }

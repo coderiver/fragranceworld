@@ -114,6 +114,12 @@
 		overflow: hidden
 		background-attachment: fixed
 		+cover
+		&:first-child
+			.slider__prev
+				display: none
+		&:last-child
+			.slider__next
+				display: none
 
 	.slider__el_1
 		background-image: url(../img/slidebg_1.jpg)
