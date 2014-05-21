@@ -53,7 +53,7 @@ head.ready(function() {
 
 			$('html, body').stop().animate({
 				'scrollTop': $(page).offset().top
-			}, 500, 'swing');
+			}, 1000, 'swing');
 		});
 
 		// add 'is-active' class to the first pagination
@@ -80,6 +80,46 @@ head.ready(function() {
 			{
 				$('.slider__paginator').find('li.is-active').prev().find('a').trigger('click');
 			}
+		});
+
+		// $('#nav').onePageNav();
+
+
+		var $current, flag = false;
+
+		$('body.has-slider').mousewheel(function(event, delta) {
+				if (flag) { return false; }
+				$current = $('.slider__el.is-current');
+
+				if (delta > 0) {
+						$prev = $current.prev();
+
+						if ($prev.length) {
+								flag = true;
+								$('body').scrollTo($prev, 1000, {
+										onAfter : function(){
+												flag = false;
+										}
+								});
+								$current.removeClass('is-current');
+								$prev.addClass('is-current');
+						}
+				} else {
+						$next = $current.next();
+
+						if ($next.length) {
+								flag = true;
+								$('body').scrollTo($next, 1000, {
+										onAfter : function(){
+												flag = false;
+										}
+								});
+								$current.removeClass('is-current');
+								$next.addClass('is-current');
+						}
+				}
+
+				event.preventDefault();
 		});
 
 	} slider();
