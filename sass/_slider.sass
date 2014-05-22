@@ -182,6 +182,11 @@
 #parallax4
 	position: absolute
 	left: 50%
+	top: 90%
+	+transition(all .2s ease-out)
+	.is-animated &
+		top: 20%
+		 
 #parallax1
 	margin-left: -750px
 #parallax2

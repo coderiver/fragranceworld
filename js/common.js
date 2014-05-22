@@ -85,10 +85,13 @@ $(document).ready(function() {
 		});
 
 
-
+		b = $('body');
 		var $current, flag = false;
 		$('body.has-slider').mousewheel(function(event, delta) {
-				if (flag) { return false; }
+				if (b.hasClass('is-running')) { console.log('its already running');return false; }
+				b.addClass('is-running');
+				console.log('go');
+
 				$current = $('.slider__el.is-animated');
 
 				if (delta > 0) {
@@ -96,6 +99,7 @@ $(document).ready(function() {
 
 						if ($prev.length) {
 								flag = true;
+
 								$('body').scrollTo($prev, 1000, {
 										onAfter : function(){
 												flag = false;
@@ -114,7 +118,7 @@ $(document).ready(function() {
 								});
 						}
 				}
-
+				setTimeout(function(){b.removeClass('is-running');},1400);
 				event.preventDefault();
 		});
 
