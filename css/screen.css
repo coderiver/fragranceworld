@@ -309,10 +309,12 @@ h3, .h3 { font-size: 24px; }
 
 #parallax1, #parallax2, #parallax3, #parallax4 { position: absolute; left: 50%; }
 
-#parallax1 { margin-left: -800px; }
+#parallax1 { margin-left: -750px; }
 
-#parallax2 { margin-left: -900px; }
+#parallax2 { margin-left: -800px; }
 
 #parallax3 { margin-left: 500px; }
 
 #parallax4 { margin-left: -600px; }
+
+#parallax3, #parallax4 { display: none; }

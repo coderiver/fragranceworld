@@ -101,8 +101,6 @@ $(document).ready(function() {
 												flag = false;
 										}
 								});
-								// $current.removeClass('is-current');
-								// $prev.addClass('is-current');
 						}
 				} else {
 						$next = $current.next();
@@ -114,8 +112,6 @@ $(document).ready(function() {
 												flag = false;
 										}
 								});
-								// $current.removeClass('is-current');
-								// $next.addClass('is-current');
 						}
 				}
 
@@ -124,12 +120,6 @@ $(document).ready(function() {
 
 	} slider();
 
-	$('.slider').stellar({
-		horizontalScrolling: false,
-		// verticalScrolling: true,
-		// verticalOffset: 0,
-		hideDistantElements: false
-	});
 
 });
 
