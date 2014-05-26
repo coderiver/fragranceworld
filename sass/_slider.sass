@@ -50,6 +50,7 @@
 		+opacity(0)
 		+transition(opacity 1s ease-in)
 		+transition-delay(2.4s)
+		z-index: 1000
 		.pace-done &
 			+opacity(1)
 		span
@@ -87,6 +88,9 @@
 		line-height: 1
 		margin: -10px auto 0
 		color: #fff
+		z-index: 100
+		a
+			text-decoration: none
 	.slider__logo
 		+s(logo_main)
 		margin: 20px auto 30px
@@ -95,7 +99,9 @@
 		font-family: $font-dm
 		line-height: 1.2
 		font-size: 160px
-		margin-bottom: 20px
+		text-decoration: none !important
+		color: #fff
+		// margin-bottom: 70px
 		letter-spacing: normal
 		span
 			display: block
@@ -103,9 +109,20 @@
 			font-size: 24px
 			letter-spacing: 0.4em
 	.slider__subtitle
+		// position: absolute
 		color: #fff
 		font-family: $font-xi
 		font-size: 30px
+		position: relative
+		z-index: 100
+		// left: 0
+		// right: 0
+		text-align: center
+		// bottom: -200%
+		// +transition(all .6s ease-in-out)
+		// +transition-delay(.1s)
+		// .is-animated &
+			// bottom: -40px
 	.slider__el
 		position: relative
 		height: 100%
@@ -113,7 +130,6 @@
 		width: 100%
 		text-align: center
 		overflow: hidden
-		background-attachment: fixed
 		// background-position: 50% 0
 		+cover
 		// +gpu
@@ -124,9 +140,33 @@
 			.slider__next
 				display: none
 
+	.slider__el_2,
+	.slider__el_3,
+	.slider__el_4,
+	.slider__el_5,
+	.slider__el_6
+		+gpu
+		&.is-animated
+			.slider__subtitle
+				bottom: -90px
+		.slider__subtitle
+			position: absolute
+			color: #fff
+			font-family: $font-xi
+			font-size: 30px
+			// position: relative
+			z-index: 100
+			left: 0
+			right: 0
+			text-align: center
+			bottom: -200%
+			+transition(all .6s ease-in-out)
+			+transition-delay(.1s)
+
 	.slider__el_1
 		background-image: url(../img/slidebg_1.jpg)
 		line-height: 1 !important
+		background-attachment: fixed
 		.slider__main
 			margin-top: 0
 			+opacity(0)
@@ -179,34 +219,151 @@
 #parallax1,
 #parallax2,
 #parallax3,
-#parallax4
+#parallax4,
+#parallax5,
+#parallax6,
+#parallax7,
+#parallax8,
+#parallax9,
+#parallax10,
+#parallax11,
+#parallax12,
+#parallax13,
+#parallax14,
+#parallax15
 	position: absolute
+	+transition-delay(.1s)
+	+gpu
+
+#slide1_pic
+	position: absolute
+	+transition(all .6s ease-in-out)
+	+transition-delay(.1s)
+	+gpu
+	top: -230%
 	left: 50%
-	top: 90%
-	+transition(all .2s ease-out)
+	margin-left: -214px
+	margin-top: -290px
 	.is-animated &
-		top: 20%
-		 
+		top: 50%
+
+
 #parallax1
-	margin-left: -750px
+	+transition(all .6s ease-in-out)
+	left: -150px
+	bottom: -260px
+	.is-animated &
+		bottom: 50%
+		margin-bottom: -170px
+
 #parallax2
-	margin-left: -800px
+	+transition(all .3s ease-out)
+	left: -100px
+	top: -800px
+	.is-animated &
+		top: -240px
 #parallax3
-	margin-left: 500px
+	+transition(all .3s ease-out)
+	top: -400px
+	right: -150px
+	.is-animated &
+		top: -45px
+
 #parallax4
-	margin-left: -600px
+	+transition(all .4s ease-out)
+	bottom: -500px
+	left: 30px
+	.is-animated &
+		bottom: -60px
 
+#parallax5
+	+transition(all .5s ease-out)
+	bottom: -500px
+	right: 50px
+	.is-animated &
+		bottom: 120px
+		
+#parallax6
+	+transition(all .4s ease-out)
+	bottom: -500px
+	left: 60%
+	margin-left: -93px
+	.is-animated &
+		bottom: 50px
+		
+		
+#parallax7
+	+transition(all .4s ease-out)
+	top: -500px
+	left: 30%
+	margin-left: -118px
+	.is-animated &
+		top: 10px
+		
+		
+#parallax8
+	+transition(all .6s ease-out)
+	top: -500px
+	right: 30%
+	margin-right: -99px
+	.is-animated &
+		top: 20px
+		
+#parallax9
+	+transition(all .5s ease-out)
+	top: -500px
+	left: 15%
+	margin-left: -83px
+	.is-animated &
+		top: 50%
+		margin-top: -200px
 
-// #parallax2,
-#parallax3,
-#parallax4
-	display: none
-
-
-
-
-
-
-
-
-
+#parallax10
+	+transition(all .5s ease-out)
+	top: -500px
+	left: 45%
+	margin-left: -70px
+	.is-animated &
+		top: 110px
+		
+#parallax11
+	+transition(all .5s ease-out)
+	top: -500px
+	right: 18%
+	margin-right: -61px
+	.is-animated &
+		top: 50%
+		margin-top: -150px
+		
+#parallax12
+	+transition(all .5s ease-out)
+	top: -500px
+	right: 40%
+	margin-right: -38px
+	.is-animated &
+		top: 50%
+		margin-top: -165px		
+#parallax13
+	+transition(all .6s ease-out)
+	bottom: -500px
+	left: 37%
+	margin-left: -48px
+	.is-animated &
+		bottom: 25%
+		margin-top: -50px
+#parallax14
+	+transition(all .6s ease-out)
+	bottom: -500px
+	right: 39%
+	margin-right: -36px
+	.is-animated &
+		bottom: 34%
+		margin-top: -36px
+#parallax15
+	+transition(all .7s ease-out)
+	bottom: -500px
+	right: 30%
+	margin-right: -62px
+	.is-animated &
+		bottom: 32%
+		margin-top: -29px
