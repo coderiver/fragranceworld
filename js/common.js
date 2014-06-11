@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 			$('html, body').stop().animate({
 				'scrollTop': $(page).offset().top
-			}, 1000, 'swing');
+			}, 800, 'swing');
 		});
 
 		// add 'is-active' class to the first pagination
@@ -100,7 +100,7 @@ $(document).ready(function() {
 						if ($prev.length) {
 								flag = true;
 
-								$('body').scrollTo($prev, 1000, {
+								$('body').scrollTo($prev, 800, {
 										onAfter : function(){
 												flag = false;
 										}
@@ -111,14 +111,14 @@ $(document).ready(function() {
 
 						if ($next.length) {
 								flag = true;
-								$('body').scrollTo($next, 1000, {
+								$('body').scrollTo($next, 800, {
 										onAfter : function(){
 												flag = false;
 										}
 								});
 						}
 				}
-				setTimeout(function(){b.removeClass('is-running');},1400);
+				setTimeout(function(){b.removeClass('is-running');},1200);
 				event.preventDefault();
 		});
 

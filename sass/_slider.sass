@@ -91,10 +91,13 @@
 		z-index: 100
 		a
 			text-decoration: none
+		&.first
+			height: 100%	
 	.slider__logo
 		+s(logo_main)
 		margin: 20px auto 30px
 	.slider__title
+		height: 100% 
 		text-transform: uppercase
 		font-family: $font-dm
 		line-height: 1.2
@@ -102,12 +105,23 @@
 		text-decoration: none !important
 		color: #fff
 		// margin-bottom: 70px
+		vertical-align: middle
 		letter-spacing: normal
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle  
 		span
 			display: block
 			font-family: $font-dxt
 			font-size: 24px
 			letter-spacing: 0.4em
+	.slider__title-inner
+		display: inline-block
+		vertical-align: middle
+		margin-top: -400px		
 	.slider__subtitle
 		// position: absolute
 		color: #fff
@@ -242,19 +256,30 @@
 #parallax3_8,
 #parallax3_9,
 #parallax3_10,
-#parallax3_11
+#parallax3_11,
+
+#parallax4_1,
+#parallax4_2,
+#parallax4_3,
+#parallax4_4,
+#parallax4_5,
+#parallax4_6,
+#parallax4_7,
+#parallax4_8,
+#parallax4_9,
+#parallax4_10
 
 	position: absolute
-	+transition-delay(.1s)
+	//+transition-delay(.1s)
 	+gpu
 
 
 #slide1_pic
 	position: absolute
 	+transition(all .6s ease-in-out)
-	+transition-delay(.1s)
+	+transition-delay(.5s)
 	+gpu
-	top: -230%
+	top: -300%
 	left: 50%
 	margin-left: -214px
 	margin-top: -290px
@@ -264,13 +289,33 @@
 #slide2_pic
 	position: absolute
 	+transition(all .6s ease-in-out)
-	+transition-delay(.1s)
+	+transition-delay(.5s)
 	+gpu
-	top: -330%
+	top: -406%
 	left: 50%
 	margin-left: -140px
 	.is-animated &
 		top: -150px
+#slide3_pic
+	position: absolute
+	+transition(all .6s ease-in-out)
+	+transition-delay(.5s)
+	+gpu
+	top: -427%
+	left: 50%
+	margin-left: -109px
+	.is-animated &
+		top: -185px
+#slide4_pic
+	position: absolute
+	+transition(all .6s ease-in-out)
+	+transition-delay(.5s)
+	+gpu
+	top: -427%
+	left: 50%
+	margin-left: -267px
+	.is-animated &
+		top: -185px			
 
 #parallax1
 	+transition(all .6s ease-in-out)
@@ -470,7 +515,67 @@
 	right: 0px
 	.is-animated &
 		bottom: 20px
-
+		
+#parallax4_1
+	+transition(all .4s ease-out)
+	bottom: -32%
+	left: 0px
+	.is-animated &
+		bottom: 0px
+#parallax4_2
+	+transition(all .4s ease-out)
+	top: -15%
+	right: 0%
+	.is-animated &
+		top: 0px
+#parallax4_3
+	+transition(all .4s ease-out)
+	bottom: -22%
+	right: 11%
+	.is-animated &
+		bottom: 228px
+#parallax4_4
+	+transition(all .6s ease-out)
+	top: -8%
+	left: 39%
+	.is-animated &
+		top: 62px								
+#parallax4_5
+	+transition(all .6s ease-out)
+	top: -35%
+	left: 10%
+	.is-animated &
+		top: 52px
+#parallax4_6
+	+transition(all .6s ease-out)
+	bottom: -35%
+	left: 32%
+	.is-animated &
+		bottom: 29%
+#parallax4_7
+	+transition(all .6s ease-out)
+	top: -35%
+	right: 28%
+	.is-animated &
+		top: 22%
+#parallax4_8
+	+transition(all .8s ease-out)
+	bottom: -35%
+	right: 38%
+	.is-animated &
+		bottom: 28%
+#parallax4_9
+	+transition(all .8s ease-out)
+	bottom: -35%
+	left: 42%
+	.is-animated &
+		bottom: 30%
+#parallax4_10
+	+transition(all .8s ease-out)
+	bottom: -35%
+	left: 45%
+	.is-animated &
+		bottom: 18%											
 
 
 
