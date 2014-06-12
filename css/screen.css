@@ -251,8 +251,16 @@ h3, .h3 { font-size: 24px; }
 .input:focus::-webkit-input-placeholder, .textarea:focus::-webkit-input-placeholder { color: transparent; }
 
 .input { padding: 13px 0; border-bottom: 2px solid black; }
+.input.is-error { border-color: #ff1e00; }
+.input.is-error:-moz-placeholder, .input.is-error::-moz-placeholder { color: #ff1e00; opacity: 1; }
+.input.is-error::-webkit-input-placeholder { color: #ff1e00; }
+
+.validation { text-align: left; margin-bottom: 20px; color: #ff1e00; letter-spacing: 1px; }
 
 .textarea { height: 110px; padding-top: 7px; line-height: 34px; overflow: hidden; outline: none; border: none; font-size: 16px; background: url(../img/textarea.jpg); resize: none; }
+.textarea.is-error { background: url(../img/textarea-error.jpg); }
+.textarea.is-error:-moz-placeholder, .textarea.is-error::-moz-placeholder { color: #ff1e00; opacity: 1; }
+.textarea.is-error::-webkit-input-placeholder { color: #ff1e00; }
 
 .btn { background: #ff1419; border: none; color: white; text-transform: uppercase; cursor: pointer; text-decoration: none; line-height: 20px; font-size: 20px; font-family: "PFDinTextCompPro", Arial, sans-serif; padding: 15px 55px 13px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 

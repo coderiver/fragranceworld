@@ -541,7 +541,6 @@ h3, .h3
 	border-top: 2px solid #ff1419
 	height: 1px
 	a
-		// font-family: $font-dm
 		position: relative
 		text-transform: uppercase
 		color: #fffefe
@@ -555,13 +554,11 @@ h3, .h3
 		top: -24px
 
 .shops
-	// .shops__head
 	background: #fff
 	.shops__head
 		position: relative
 		z-index: 1
 	.shops__content
-		// min-height: 400px //tmp
 		text-align: left
 		height: 534px
 		overflow: hidden 
@@ -776,10 +773,18 @@ h3, .h3
 	margin-bottom: 25px
 	+placeholder-color(#000)
 	&:focus
-		+placeholder-color(transparent)
+		+placeholder-color(transparent)	
 .input
 	padding: 13px 0
 	border-bottom: 2px solid #000
+	&.is-error
+		border-color: #ff1e00
+		+placeholder-color(#ff1e00)
+.validation
+	text-align: left
+	margin-bottom: 20px
+	color: #ff1e00
+	letter-spacing: 1px 			
 .textarea
 	height: 110px
 	padding-top: 7px
@@ -790,7 +795,9 @@ h3, .h3
 	font-size: 16px
 	background: url(../img/textarea.jpg)
 	resize: none
-
+	&.is-error
+		+placeholder-color(#ff1e00)
+		background: url(../img/textarea-error.jpg)
 
 .btn
 	background: #ff1419
