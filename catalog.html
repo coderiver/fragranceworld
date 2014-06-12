@@ -15,6 +15,7 @@
 	</script>
 	<script src="js/lib/jquery.mousewheel.js"></script>
 	<script src="js/lib/jquery.scrollTo.js"></script>
+	<script src="js/lib/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -35,14 +36,14 @@
 					<div class="catalog__head">
 						<ul class="filter">
 							<li class="filter__folder"><a href="#">Все</a></li>
-							<li class="filter__folder is-active"><a href="#">Мужские</a></li>
-							<li class="filter__folder"><a href="#">Женские</a></li>
+							<li class="filter__folder"><a href="#">Мужские</a></li>
+							<li class="filter__folder is-active"><a href="#">Женские</a></li>
 						</ul>
 						<!-- /.filter -->
 						<ul class="subfilter">
-							<li class="subfilter__folder is-active"><a href="#">Спорт</a></li>
+							<li class="subfilter__folder"><a href="#">Спорт</a></li>
 							<li class="subfilter__folder"><a href="#">Гламур</a></li>
-							<li class="subfilter__folder"><a href="#">Фруктовый</a></li>
+							<li class="subfilter__folder is-active"><a href="#">Фруктовый</a></li>
 							<li class="subfilter__folder"><a href="#">Свежесть</a></li>
 						</ul>
 						<!-- /.subfilter -->
@@ -51,7 +52,7 @@
 						<div class="catalog__group">
 							<div class="catalog__item">
 								<div class="item">
-									<a href="#" class="item__hotzone"><span class="item__hotzonemoar">Подробнее</span></a>
+									<a href="#product1" class="item__hotzone btn-popup"><span class="item__hotzonemoar">Подробнее</span></a>
 									<div class="item__pic">
 										<img src="img/pic_1.jpg" alt="img">
 									</div>
@@ -207,5 +208,40 @@
 	</div>
 </div>
 <!-- /.footer -->
+<div class="overlay"></div>
+<!-- /.overlay -->
+<div class="popup-wrap">
+	<div id="product1" class="popup popup_prod">
+		<div class="popup__close"></div>
+		<div class="popup__in">
+			<div class="product">
+				<div class="product__left">
+					<div class="product__gallery">
+						<div class="product__pager"></div>
+						<img src="img/pic9.jpg" alt="">
+						<img src="img/pict10.jpg" alt="">
+						<img src="img/pict11.jpg" alt="">
+					</div>
+				</div>
+				<div class="product__content">
+					<div class="product__title">Chance de fuagra</div>
+					<div class="product__subtitle">божественное сочетание свежих фруктов и мускуса</div>
+					<div class="product__text">Духи для настоящих любителей жизни. Свежий неповторимый запах дополнит ваш неповторимый образ чувственностью и жизненной энергией. Этот запах станет настоящей изюминкой в вашем свежем образе. Почувствуйте себя солнечной богиней Востока. Духи для настоящих любителей жизни. Духи для настоящих любителей жизни. </div>
+					<ul class="social-plugin">
+						<li class="social-plugin__item">
+							<img src="img/fb-plugin.jpg" alt="">
+						</li>
+						<li class="social-plugin__item">
+							<img src="img/vk-plugin.jpg" alt="">
+						</li>
+						<li class="social-plugin__item">
+							<img src="img/tw-plugin.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.popup -->
 </body>
 </html>

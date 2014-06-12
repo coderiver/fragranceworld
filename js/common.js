@@ -126,8 +126,6 @@ $(document).ready(function() {
 
 	// tochki tabs
 
-
-	//$(".js-shop-map").hide();	
 	
 	$(".js-toggle-tochki").on('click', function(){
 		if ($(this).hasClass('is-map')) {
@@ -142,6 +140,19 @@ $(document).ready(function() {
 			
 		}
 	});
+
+
+	// cycle init
+
+	if ($(".product__gallery").length) {
+		$(".product__gallery").cycle({
+			pager: '.product__pager'
+		});
+	};
+	
+
+
+
 
 });
 
