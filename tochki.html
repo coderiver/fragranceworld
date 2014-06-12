@@ -39,10 +39,10 @@
 		<div class="page__content">
 			<div class="shops">
 				<div class="shops__head">
-					<div class="h-centered"><a href="#">На карте</a></div>
+					<div class="h-centered"><a href="#" class="js-toggle-tochki">Показать карту</a></div>
 				</div>
 				<div class="shops__content">
-					<div class="shops__group" style="display: none;">
+					<div class="shops__group js-shop-group">
 						<div class="container">
 							<ul class="shops__ul">
 								<li class="shops__item">
@@ -162,7 +162,7 @@
 						</div>
 					</div>
 					<!-- /.shops__group -->
-					<div class="shops__map">
+					<div class="shops__map js-shop-map">
 						<div id="map-canvas" class="google-map google-map_shops"></div>
 						<script>
 								function initialize() {
@@ -261,7 +261,7 @@
 		</div>
 	</div>
 	<!-- /.page -->
-	<div class="push"></div>
+	<!-- <div class="push"></div> -->
 </div>
 <!-- /.out-->
 <div class="footer">

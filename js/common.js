@@ -124,6 +124,24 @@ $(document).ready(function() {
 
 	} slider();
 
+	// tochki tabs
+
+
+	//$(".js-shop-map").hide();	
+	
+	$(".js-toggle-tochki").on('click', function(){
+		if ($(this).hasClass('is-map')) {
+			$(this).removeClass('is-map').text('Показать карту');
+			$(".js-shop-map").fadeOut();
+			$(".js-shop-group").fadeIn();
+		}
+		else{
+			$(this).addClass('is-map').text('Показать списком');
+			$(".js-shop-group").fadeOut();
+			$(".js-shop-map").fadeIn();
+			
+		}
+	});
 
 });
 

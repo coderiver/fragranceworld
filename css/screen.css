@@ -53,7 +53,7 @@ body.pace-done .logo_load { filter: progid:DXImageTransform.Microsoft.Alpha(Opac
 
 .push, .footer { height: 86px; }
 
-.footer { position: relative; background: white; -moz-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); z-index: 100; }
+.footer { position: fixed; bottom: 0; left: 0; right: 0; background: white; -moz-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); box-shadow: 0px 0 20px rgba(0, 0, 0, 0.5); z-index: 100; }
 .footer .footer__in { position: relative; *zoom: 1; max-width: 1475px; padding-top: 18px; padding-bottom: 18px; padding-left: 260px; text-align: center; }
 .footer .footer__in:after { content: " "; display: table; clear: both; }
 .footer .footer__right { position: absolute; right: 22px; top: 18px; }
@@ -172,8 +172,7 @@ h3, .h3 { font-size: 24px; }
 .contacts .contacts__col.contacts__col_tel:before { background: url('../img/icons-scca62c4f01.png') 0 -877px no-repeat; width: 28px; height: 28px; }
 .contacts .contacts__col.contacts__col_adr:before { background: url('../img/icons-scca62c4f01.png') 0 0 no-repeat; width: 22px; height: 30px; }
 
-.google-map { height: 305px; }
-.google-map.google-map_shops { height: 400px; }
+.google-map { height: 534px; }
 .google-map .gmnoprint { display: none; }
 .google-map .gm-style-cc { display: none; }
 .google-map .google-map__window { text-transform: uppercase; font-size: 16px; color: black; font-family: "PFDinTextCompPro Medium", Arial, sans-serif; }
@@ -187,8 +186,8 @@ h3, .h3 { font-size: 24px; }
 
 .shops { background: white; }
 .shops .shops__head { position: relative; z-index: 1; }
-.shops .shops__content { text-align: left; }
-.shops .shops__group { margin-top: 75px; padding-bottom: 80px; }
+.shops .shops__content { text-align: left; height: 534px; overflow: hidden; }
+.shops .shops__group { margin-top: 75px; height: 514px; padding-bottom: 80px; }
 .shops .shops__group > .container { width: 770px; }
 .shops .shops__ul { *zoom: 1; margin-left: -14px; margin-top: -55px; }
 .shops .shops__ul:after { content: " "; display: table; clear: both; }
@@ -310,7 +309,7 @@ h3, .h3 { font-size: 24px; }
 .slider .slider__el_6 { background-image: url(../img/slidebg_casual.jpg); }
 .slider .slider__el_6 .slider__subtitle { color: white; }
 
-#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7, #parallax8, #parallax9, #parallax10, #parallax11, #parallax12, #parallax13, #parallax14, #parallax15, #parallax3_1, #parallax3_2, #parallax3_3, #parallax3_4, #parallax3_5, #parallax3_6, #parallax3_7, #parallax3_8, #parallax3_9, #parallax3_10, #parallax3_11, #parallax4_1, #parallax4_2, #parallax4_3, #parallax4_4, #parallax4_5, #parallax4_6, #parallax4_7, #parallax4_8, #parallax4_9, #parallax4_10 { position: absolute; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7, #parallax8, #parallax9, #parallax10, #parallax11, #parallax12, #parallax13, #parallax14, #parallax15, #parallax3_1, #parallax3_2, #parallax3_3, #parallax3_4, #parallax3_5, #parallax3_6, #parallax3_7, #parallax3_8, #parallax3_9, #parallax3_10, #parallax3_11, #parallax4_1, #parallax4_2, #parallax4_3, #parallax4_4, #parallax4_5, #parallax4_6, #parallax4_7, #parallax4_8, #parallax4_9, #parallax4_10, #parallax5_1, #parallax5_2, #parallax5_3, #parallax5_4, #parallax5_5, #parallax5_6, #parallax5_7, #parallax5_8, #parallax5_9, #parallax5_10, #parallax5_11, #parallax5_12, #parallax5_13, #parallax5_14, #parallax5_15, #parallax5_16, #parallax5_17, #parallax5_18, #parallax5_19, #parallax5_20, #parallax5_21, #parallax5_22, #parallax5_23, #parallax5_24, #parallax5_25, #parallax5_26, #parallax5_27, #parallax5_28, #parallax6_1, #parallax6_2, #parallax6_3, #parallax6_4, #parallax6_5, #parallax6_6, #parallax6_7, #parallax6_8, #parallax6_9 { position: absolute; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
 #slide1_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -300%; left: 50%; margin-left: -214px; margin-top: -290px; }
 .is-animated #slide1_pic { top: 50%; }
@@ -323,6 +322,9 @@ h3, .h3 { font-size: 24px; }
 
 #slide4_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -427%; left: 50%; margin-left: -267px; }
 .is-animated #slide4_pic { top: -185px; }
+
+#slide5_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -427%; left: 50%; margin-left: -159px; }
+.is-animated #slide5_pic { top: -185px; }
 
 #parallax1 { -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; left: -150px; bottom: -260px; }
 .is-animated #parallax1 { bottom: 50%; margin-bottom: -170px; }
@@ -431,3 +433,111 @@ h3, .h3 { font-size: 24px; }
 
 #parallax4_10 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -35%; left: 45%; }
 .is-animated #parallax4_10 { bottom: 18%; }
+
+#parallax5_1 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; bottom: -35%; left: 40%; }
+.is-animated #parallax5_1 { bottom: 18%; }
+
+#parallax5_2 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; bottom: -35%; left: 13%; }
+.is-animated #parallax5_2 { bottom: 0%; }
+
+#parallax5_3 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: -35%; right: 2%; }
+.is-animated #parallax5_3 { top: 0%; }
+
+#parallax5_4 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -50%; right: 5%; }
+.is-animated #parallax5_4 { bottom: 5%; }
+
+#parallax5_5 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -40%; left: 6%; }
+.is-animated #parallax5_5 { bottom: 21%; }
+
+#parallax5_6 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -40%; left: 0%; }
+.is-animated #parallax5_6 { top: 10%; }
+
+#parallax5_7 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -40%; right: 12%; }
+.is-animated #parallax5_7 { top: 40%; }
+
+#parallax5_8 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -40%; right: 20%; }
+.is-animated #parallax5_8 { top: 24%; }
+
+#parallax5_9 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -40%; left: 38%; }
+.is-animated #parallax5_9 { top: 45%; }
+
+#parallax5_10 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -40%; left: 25%; }
+.is-animated #parallax5_10 { top: 2%; }
+
+#parallax5_11 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -40%; right: 34%; }
+.is-animated #parallax5_11 { bottom: 42%; }
+
+#parallax5_12 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -40%; left: 20%; }
+.is-animated #parallax5_12 { bottom: 37%; }
+
+#parallax5_13 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -40%; left: 30%; }
+.is-animated #parallax5_13 { bottom: 25%; }
+
+#parallax5_14 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -40%; left: 20%; }
+.is-animated #parallax5_14 { bottom: 50%; }
+
+#parallax5_15 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -40%; right: 26%; }
+.is-animated #parallax5_15 { bottom: 36%; }
+
+#parallax5_16 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -40%; right: 36%; }
+.is-animated #parallax5_16 { bottom: 9%; }
+
+#parallax5_17 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -60%; left: 26%; }
+.is-animated #parallax5_17 { bottom: 20%; }
+
+#parallax5_18 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -40%; left: 37%; }
+.is-animated #parallax5_18 { top: 10%; }
+
+#parallax5_19 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -90%; right: 37%; }
+.is-animated #parallax5_19 { top: 8%; }
+
+#parallax5_20 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -50%; right: 21%; }
+.is-animated #parallax5_20 { top: 8%; }
+
+#parallax5_21 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -60%; left: 25%; }
+.is-animated #parallax5_21 { top: 18%; }
+
+#parallax5_22 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -60%; right: 25%; }
+.is-animated #parallax5_22 { bottom: 22%; }
+
+#parallax5_23 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -80%; left: 43%; }
+.is-animated #parallax5_23 { top: 25%; }
+
+#parallax5_24 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -80%; left: 53%; }
+.is-animated #parallax5_24 { top: 25%; }
+
+#parallax5_25 { -moz-transition: all 1s ease-out; -o-transition: all 1s ease-out; -webkit-transition: all 1s ease-out; transition: all 1s ease-out; top: -100%; right: 32%; }
+.is-animated #parallax5_25 { top: 26%; }
+
+#parallax5_26 { -moz-transition: all 1s ease-out; -o-transition: all 1s ease-out; -webkit-transition: all 1s ease-out; transition: all 1s ease-out; top: -50%; right: 5%; }
+.is-animated #parallax5_26 { top: 55%; }
+
+#parallax5_27 { -moz-transition: all 1s ease-out; -o-transition: all 1s ease-out; -webkit-transition: all 1s ease-out; transition: all 1s ease-out; top: -50%; left: 5%; }
+.is-animated #parallax5_27 { top: 5%; }
+
+#parallax6_1 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: -40%; right: 0%; }
+.is-animated #parallax6_1 { top: 10%; }
+
+#parallax6_2 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: 0%; left: -40%; }
+.is-animated #parallax6_2 { left: 0%; }
+
+#parallax6_3 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: -60%; left: 30%; }
+.is-animated #parallax6_3 { top: 10%; }
+
+#parallax6_4 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; bottom: -60%; left: 0%; }
+.is-animated #parallax6_4 { bottom: 0%; }
+
+#parallax6_5 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -80%; left: 55%; }
+.is-animated #parallax6_5 { bottom: 15%; }
+
+#parallax6_6 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -80%; right: 25%; }
+.is-animated #parallax6_6 { top: 10%; }
+
+#parallax6_7 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -80%; right: 5%; }
+.is-animated #parallax6_7 { bottom: 0%; }
+
+#parallax6_8 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -100%; right: 33%; }
+.is-animated #parallax6_8 { top: 25%; }
+
+#parallax6_9 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; bottom: -100%; left: 33%; }
+.is-animated #parallax6_9 { bottom: 25%; }

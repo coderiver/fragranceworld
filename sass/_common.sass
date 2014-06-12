@@ -115,7 +115,10 @@ body
 	height: 86px
 
 .footer
-	position: relative
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
 	background: #fff
 	+box-shadow(0px 0 20px rgba(#000,.5))
 	z-index: 100
@@ -511,9 +514,9 @@ h3, .h3
 				+s(adr)
 
 .google-map
-	height: 305px
+	height: 534px
 	&.google-map_shops
-		height: 400px
+		//height: 400px
 	.gmnoprint
 		display: none
 	.gm-style-cc
@@ -560,8 +563,11 @@ h3, .h3
 	.shops__content
 		// min-height: 400px //tmp
 		text-align: left
+		height: 534px
+		overflow: hidden 
 	.shops__group
 		margin-top: 75px
+		height: 514px
 		padding-bottom: 80px
 		> .container
 			width: 770px
