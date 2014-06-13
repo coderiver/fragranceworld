@@ -33,7 +33,7 @@ $(document).ready(function() {
 			$(' .slider__el ').each(function(){
 				var pos = $(this).offset().top;
 				var id = $(this).attr('id');
-				if( $(window).scrollTop() >= (pos)){
+				if( $(window).scrollTop() == (pos)){
 					$('.slider__el').removeClass('is-animated');
 					$(this).addClass('is-animated');
 					$('.slider__paginator li').removeClass('is-active');
@@ -150,9 +150,40 @@ $(document).ready(function() {
 		});
 	};
 	
-
-
-
+// form validation
+	
+	if ($(".popup__form").length) {
+		
+		$(".validation").hide();
+	
+		$("#feedback-form").validate({
+			rules: {
+				phone: {
+					digits: true,
+					minlength: 10,
+					maxlength: 12
+				}
+			},
+			errorPlacement: function(error,element) {
+  				return true;
+  			},
+  			invalidHandler: function(form, validator) {
+    	    	var errors = validator.numberOfInvalids();
+    	   		if (errors) {
+					$(".input[name=uname]").attr('placeholder', 'Контактное лицо *');
+					$(".input[name=cname]").attr('placeholder', 'Название организации *');
+					$(".input[name=phone]").attr('placeholder', 'Телефон *');
+					$(".textarea[name=comment]").attr('placeholder', 'Комментарий *');
+    	    	}
+   			},
+  			errorClass: "is-error",
+  			errorLabelContainer: "#messageBox",
+  			errorElement: 'span'
+		});
+	};
+	
+	
+	
 
 });
 

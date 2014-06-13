@@ -126,7 +126,6 @@ body
 		position: relative
 		+clr
 		@extend %in
-		max-width: 1475px
 		padding-top: 18px
 		padding-bottom: 18px
 		padding-left: 260px
@@ -241,6 +240,7 @@ body
 	float: right
 	display: block
 	margin-top: 11px
+	margin-left: 50px 
 	+s(flex)
 	+hidetext
 	&:hover
@@ -709,7 +709,15 @@ h3, .h3
 	z-index: -1
 	-ms-overflow-y: scroll
 	overflow-y: scroll
+	vertical-align: middle
+	text-align: center
 	+transition(all .2s ease-in)
+	&:before
+		content: ""
+		display: inline-block
+		width: 0
+		height: 100%
+		vertical-align: middle  
 	&.is-open
 		z-index: 1001
 		height: 100%
@@ -720,11 +728,8 @@ h3, .h3
 			+transform(translate3d(0,0,0))
 
 .popup
-	position: absolute
-	margin-left: -268px
-	margin-top: 10px
-	margin-bottom: 10px
-	left: 50%
+	display: inline-block
+	vertical-align: middle
 	padding: 15px
 	font-size: 16px
 	text-align: left
@@ -736,8 +741,7 @@ h3, .h3
 	+transform(translate3d(0,-150%,0))
 	+transition(transform .3s ease-in)
 	&.popup_prod
-		width: 1100px
-		margin-left: -550px 
+		width: 1000px 
 	.popup__close
 		position: absolute
 		top: 30px
@@ -787,7 +791,9 @@ h3, .h3
 	text-align: left
 	margin-bottom: 20px
 	color: #ff1e00
-	letter-spacing: 1px 			
+	letter-spacing: 1px
+	span
+		font-size: 0 			
 .textarea
 	height: 110px
 	padding-top: 7px

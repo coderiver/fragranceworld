@@ -15,6 +15,7 @@
 	</script>
 	<script src="js/lib/jquery.mousewheel.js"></script>
 	<script src="js/lib/jquery.scrollTo.js"></script>
+	<script src="js/lib/jquery.validate.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -112,12 +113,12 @@
 			<div class="popup__title">Форма обратной связи</div>
 			<div class="popup__content">
 				<div class="popup__form">
-					<form action="#">
-						<div class="validation">*Поле заполнено некорректно</div>
-						<input class="input" type="text" placeholder="Контактное лицо">
-						<input class="input is-error" type="text" placeholder="Название организации *">
-						<input class="input" type="text" placeholder="Телефон">
-						<textarea class="textarea is-error" cols="30" rows="10" placeholder="Комментарий *"></textarea>
+					<form action="#" id="feedback-form">
+						<label class="validation" id="messageBox"><p>* Поле заполнено некорректно</p></label>
+						<input class="input" name="uname" type="text" placeholder="Контактное лицо" required>
+						<input class="input" name="cname" type="text" placeholder="Название организации" required>
+						<input class="input" name="phone" type="text" name="phone" placeholder="Телефон" required>
+						<textarea class="textarea" name="comment" cols="30" rows="10" placeholder="Комментарий" required></textarea>
 						<button type="submit" class="btn">Отправить</button>
 					</form>
 				</div>
