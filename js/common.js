@@ -9,15 +9,17 @@ $(document).ready(function() {
 			$('body').addClass(' has-popup ');
 			return false;
 		});
-		$(' .popup ').on('click', function() {
-			event.stopPropagation();
-		});
+		
 		$(' .popup__close, .popup-wrap ').on('click', function() {
 			$('.popup-wrap').removeClass(' is-open ');
 			$('.overlay').fadeOut('fast');
 			$('body').removeClass(' has-popup ');
 			$('.popup').removeClass('is-open');
 			return false;
+		});
+
+		$(' .popup ').on('click', function() {
+			event.stopPropagation();
 		});
 	} popup();
 
@@ -145,8 +147,13 @@ $(document).ready(function() {
 	// cycle init
 
 	if ($(".product__gallery").length) {
-		$(".product__gallery").cycle({
-			pager: '.product__pager'
+		$(".product__gallery").each(function(){
+				var pager = $(this).find('.product__pager');
+				var next = $(this).find('.product__next');
+			$(this).cycle({
+				pager: pager,
+				next: next
+			});
 		});
 	};
 	
