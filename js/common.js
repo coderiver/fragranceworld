@@ -10,7 +10,7 @@ $(document).ready(function() {
 			return false;
 		});
 		
-		$(' .popup__close, .popup-wrap ').on('click', function() {
+		$(' .popup__close, .popup-wrap ').on('click', function(event) {
 			$('.popup-wrap').removeClass(' is-open ');
 			$('.overlay').fadeOut('fast');
 			$('body').removeClass(' has-popup ');
@@ -18,7 +18,7 @@ $(document).ready(function() {
 			return false;
 		});
 
-		$(' .popup ').on('click', function() {
+		$(' .popup ').on('click', function(event) {
 			event.stopPropagation();
 		});
 	} popup();
