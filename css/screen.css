@@ -348,8 +348,10 @@ h3, .h3 { font-size: 24px; }
 .slider .slider__el_6 .slider__subtitle { color: white; }
 .slider .slider__el_7 { background-image: url(../img/slidebg_flower.jpg); }
 .slider .slider__el_7 .slider__subtitle { color: #a11bb3; }
+.slider .slider__el_8 { background-image: url(../img/slidebg_sweet.jpg); }
+.slider .slider__el_8 .slider__subtitle { color: #463230; padding-top: 50px; }
 
-#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7, #parallax8, #parallax9, #parallax10, #parallax11, #parallax12, #parallax13, #parallax14, #parallax15, #parallax3_1, #parallax3_2, #parallax3_3, #parallax3_4, #parallax3_5, #parallax3_6, #parallax3_7, #parallax3_8, #parallax3_9, #parallax3_10, #parallax3_11, #parallax4_1, #parallax4_2, #parallax4_3, #parallax4_4, #parallax4_5, #parallax4_6, #parallax4_7, #parallax4_8, #parallax4_9, #parallax4_10, #parallax5_1, #parallax5_2, #parallax5_3, #parallax5_4, #parallax5_5, #parallax5_6, #parallax5_7, #parallax5_8, #parallax5_9, #parallax5_10, #parallax5_11, #parallax5_12, #parallax5_13, #parallax5_14, #parallax5_15, #parallax5_16, #parallax5_17, #parallax5_18, #parallax5_19, #parallax5_20, #parallax5_21, #parallax5_22, #parallax5_23, #parallax5_24, #parallax5_25, #parallax5_26, #parallax5_27, #parallax5_28, #parallax6_1, #parallax6_2, #parallax6_3, #parallax6_4, #parallax6_5, #parallax6_6, #parallax6_7, #parallax6_8, #parallax6_9, #parallax7_1, #parallax7_2, #parallax7_3, #parallax7_4, #parallax7_5, #parallax7_6, #parallax7_7, #parallax7_8, #parallax7_9, #parallax7_10, #parallax7_11, #parallax7_12, #parallax7_13, #parallax7_14 { position: absolute; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+#parallax1, #parallax2, #parallax3, #parallax4, #parallax5, #parallax6, #parallax7, #parallax8, #parallax9, #parallax10, #parallax11, #parallax12, #parallax13, #parallax14, #parallax15, #parallax3_1, #parallax3_2, #parallax3_3, #parallax3_4, #parallax3_5, #parallax3_6, #parallax3_7, #parallax3_8, #parallax3_9, #parallax3_10, #parallax3_11, #parallax4_1, #parallax4_2, #parallax4_3, #parallax4_4, #parallax4_5, #parallax4_6, #parallax4_7, #parallax4_8, #parallax4_9, #parallax4_10, #parallax5_1, #parallax5_2, #parallax5_3, #parallax5_4, #parallax5_5, #parallax5_6, #parallax5_7, #parallax5_8, #parallax5_9, #parallax5_10, #parallax5_11, #parallax5_12, #parallax5_13, #parallax5_14, #parallax5_15, #parallax5_16, #parallax5_17, #parallax5_18, #parallax5_19, #parallax5_20, #parallax5_21, #parallax5_22, #parallax5_23, #parallax5_24, #parallax5_25, #parallax5_26, #parallax5_27, #parallax5_28, #parallax6_1, #parallax6_2, #parallax6_3, #parallax6_4, #parallax6_5, #parallax6_6, #parallax6_7, #parallax6_8, #parallax6_9, #parallax7_1, #parallax7_2, #parallax7_3, #parallax7_4, #parallax7_5, #parallax7_6, #parallax7_7, #parallax7_8, #parallax7_9, #parallax7_10, #parallax7_11, #parallax7_12, #parallax7_13, #parallax7_14, #parallax8_1, #parallax8_2, #parallax8_3, #parallax8_4, #parallax8_5, #parallax8_6, #parallax8_7, #parallax8_8, #parallax8_9, #parallax8_10, #parallax8_11, #parallax8_12 { position: absolute; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
 #slide1_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -300%; left: 50%; margin-left: -214px; margin-top: -290px; }
 .is-animated #slide1_pic { top: 50%; }
@@ -368,6 +370,9 @@ h3, .h3 { font-size: 24px; }
 
 #slide6_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -427%; left: 50%; margin-left: -228px; }
 .is-animated #slide6_pic { top: -256px; }
+
+#slide7_pic { position: absolute; -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; -moz-transition-delay: 0.5s; -o-transition-delay: 0.5s; -webkit-transition-delay: 0.5s; transition-delay: 0.5s; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); top: -427%; left: 50%; margin-left: -150px; }
+.is-animated #slide7_pic { top: -170px; }
 
 #parallax1 { -moz-transition: all 0.6s ease-in-out; -o-transition: all 0.6s ease-in-out; -webkit-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out; left: -150px; bottom: -260px; }
 .is-animated #parallax1 { bottom: 50%; margin-bottom: -170px; }
@@ -626,3 +631,39 @@ h3, .h3 { font-size: 24px; }
 
 #parallax7_14 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -100%; right: 10%; }
 .is-animated #parallax7_14 { top: 25%; }
+
+#parallax8_1 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: -20%; right: 20%; }
+.is-animated #parallax8_1 { top: 0%; }
+
+#parallax8_2 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; bottom: -10%; left: 0%; }
+.is-animated #parallax8_2 { bottom: 20%; }
+
+#parallax8_3 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; bottom: -20%; right: 10%; }
+.is-animated #parallax8_3 { bottom: 3%; }
+
+#parallax8_4 { -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; -webkit-transition: all 0.4s ease-out; transition: all 0.4s ease-out; top: -60%; left: 5%; }
+.is-animated #parallax8_4 { top: 3%; }
+
+#parallax8_5 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -80%; left: 18%; }
+.is-animated #parallax8_5 { bottom: 4%; }
+
+#parallax8_6 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -80%; left: 31%; }
+.is-animated #parallax8_6 { bottom: 39%; }
+
+#parallax8_7 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -80%; left: 25%; }
+.is-animated #parallax8_7 { top: 5%; }
+
+#parallax8_8 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -100%; right: 10%; }
+.is-animated #parallax8_8 { top: 40%; }
+
+#parallax8_9 { -moz-transition: all 0.8s ease-out; -o-transition: all 0.8s ease-out; -webkit-transition: all 0.8s ease-out; transition: all 0.8s ease-out; top: -100%; left: 32%; }
+.is-animated #parallax8_9 { top: 21%; }
+
+#parallax8_10 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; bottom: -80%; left: 47%; }
+.is-animated #parallax8_10 { bottom: 15%; }
+
+#parallax8_11 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -80%; right: 40%; }
+.is-animated #parallax8_11 { top: 46%; }
+
+#parallax8_12 { -moz-transition: all 0.6s ease-out; -o-transition: all 0.6s ease-out; -webkit-transition: all 0.6s ease-out; transition: all 0.6s ease-out; top: -80%; right: 35%; }
+.is-animated #parallax8_12 { top: 15%; }
