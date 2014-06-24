@@ -34,6 +34,7 @@ $(document).ready(function() {
 			$('body').removeClass('has-slider');
 			$('.slider__el').addClass('is-animated');
 		}
+
 		else{
 			
 
@@ -130,6 +131,8 @@ $(document).ready(function() {
 				setTimeout(function(){b.removeClass('is-running');},1200);
 				event.preventDefault();
 		});
+		
+
 		}
 
 		
