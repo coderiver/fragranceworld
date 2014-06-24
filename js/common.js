@@ -26,9 +26,16 @@ $(document).ready(function() {
 
 	function slider(){
 
-		// line-height for vertical-align
-		var el_height = $('.slider__el').height();
-		$('.slider__el').css('line-height', el_height + 'px');
+		if ($(window).outerWidth() <= 900 ) {
+			$('body').removeClass('has-slider');
+			$('.slider__el').addClass('is-animated');
+
+			// line-height for vertical-align
+			var el_height = $('.slider__el').height();
+			$('.slider__el').css('line-height', el_height + 'px');
+		}
+		else{
+			
 
 		// switch 'is-active' class for paginator on scroll
 		function sliderScroll(){
@@ -123,9 +130,13 @@ $(document).ready(function() {
 				setTimeout(function(){b.removeClass('is-running');},1200);
 				event.preventDefault();
 		});
+		}
 
-	}
-	
+		
+
+	} slider();
+
+
 
 	// tochki tabs
 
@@ -144,15 +155,6 @@ $(document).ready(function() {
 		}
 	});
 
-	// resize slider
-
-	if ($(window).outerWidth() <= 900 ) {
-		$("body").removeClass('has-slider');
-		$(".slider__el").addClass('is-animated');
-	}
-	else{
-		slider();
-	}
 
 	// cycle init
 
