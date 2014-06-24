@@ -124,7 +124,8 @@ $(document).ready(function() {
 				event.preventDefault();
 		});
 
-	} slider();
+	}
+	
 
 	// tochki tabs
 
@@ -143,6 +144,15 @@ $(document).ready(function() {
 		}
 	});
 
+	// resize slider
+
+	if ($(window).outerWidth() <= 900 ) {
+		$("body").removeClass('has-slider');
+		$(".slider__el").addClass('is-animated');
+	}
+	else{
+		slider();
+	}
 
 	// cycle init
 
