@@ -26,13 +26,13 @@ $(document).ready(function() {
 
 	function slider(){
 
+		// line-height for vertical-align
+		var el_height = $('.slider__el').height();
+		$('.slider__el').css('line-height', el_height + 'px');
+		
 		if ($(window).outerWidth() <= 900 ) {
 			$('body').removeClass('has-slider');
 			$('.slider__el').addClass('is-animated');
-
-			// line-height for vertical-align
-			var el_height = $('.slider__el').height();
-			$('.slider__el').css('line-height', el_height + 'px');
 		}
 		else{
 			
