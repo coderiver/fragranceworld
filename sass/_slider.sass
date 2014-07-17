@@ -8,6 +8,7 @@
 		left: 0
 		+box-shadow(0 0 0 rgba(#000,.5))
 		z-index: 1000
+		-webkit-backface-visibility: hidden
 
 .slider
 	height: 100% !important
@@ -140,6 +141,7 @@
 		width: 100%
 		text-align: center
 		overflow: hidden
+		-webkit-backface-visibility: hidden
 		+cover
 		&:first-child
 			.slider__prev
@@ -207,6 +209,7 @@
 			bottom: 0
 			background-image: url(../img/slidebg_1_blur.jpg)
 			background-attachment: fixed
+			-webkit-backface-visibility: hidden
 			+cover
 			+opacity(0)
 			+transition(opacity 2s ease-in)
