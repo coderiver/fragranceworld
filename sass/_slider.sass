@@ -17,13 +17,14 @@
 		z-index: 1
 		top: 50%
 		margin-top: -66px
+		-webkit-backface-visibility: hidden
 		left: 55px
 		+opacity(0)
 		+transition(opacity 1s ease-in)
 		+transition-delay(2s)
 		+ipad
 			display: none
-		+hdpi
+		+ipad-retina
 			display: none
 		.pace-done &
 			+opacity(1)
@@ -184,7 +185,7 @@
 			background-attachment: scroll
 			background-size: auto !important
 			-webkit-background-size: auto !important
-		+hdpi
+		+iphone5
 			background-position: 50% 0
 			background-attachment: scroll
 			background-size: auto !important
@@ -214,7 +215,7 @@
 				display: none
 			+ipad-retina
 				display: none
-			+hdpi
+			+iphone5
 				display: none
 			
 			.pace-done &
