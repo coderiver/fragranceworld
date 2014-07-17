@@ -8,8 +8,10 @@
 		left: 0
 		+box-shadow(0 0 0 rgba(#000,.5))
 		z-index: 1000
-		-webkit-backface-visibility: hidden
-
+		// -webkit-backface-visibility: hidden
+		//display: none
+// .footer,.slider__paginator
+// 	display: none
 .slider
 	height: 100% !important
 	height: 100%
@@ -18,7 +20,7 @@
 		z-index: 1
 		top: 50%
 		margin-top: -66px
-		-webkit-backface-visibility: hidden
+		// -webkit-backface-visibility: hidden
 		left: 55px
 		+opacity(0)
 		+transition(opacity 1s ease-in)
@@ -141,7 +143,8 @@
 		width: 100%
 		text-align: center
 		overflow: hidden
-		-webkit-backface-visibility: hidden
+		// -webkit-backface-visibility: hidden
+		// -webkit-transform: translate3d(0,0,0)
 		+cover
 		&:first-child
 			.slider__prev
@@ -209,7 +212,8 @@
 			bottom: 0
 			background-image: url(../img/slidebg_1_blur.jpg)
 			background-attachment: fixed
-			-webkit-backface-visibility: hidden
+			// -webkit-backface-visibility: hidden
+			// -webkit-transform: translate3d(1px,0,0)
 			+cover
 			+opacity(0)
 			+transition(opacity 2s ease-in)
