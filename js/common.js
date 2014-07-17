@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 	function popup() {
 		$(' .btn-popup ').on('click', function(event) {
 			var id = $(this).attr("href");
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		});
 	} popup();
 
-
+if(1){
 	function slider(){
 
 		// line-height for vertical-align
@@ -43,7 +43,7 @@ $(document).ready(function() {
 			$(' .slider__el ').each(function(){
 				var pos = $(this).offset().top;
 				var id = $(this).attr('id');
-				if( $(window).scrollTop() == (pos)){
+				if( $(window).scrollTop() == (pos) && !iOS){
 					$('.slider__el').removeClass('is-animated');
 					$(this).addClass('is-animated');
 					$('.slider__paginator li').removeClass('is-active');
@@ -139,7 +139,7 @@ $(document).ready(function() {
 
 	} slider();
 
-
+}
 
 	// tochki tabs
 
@@ -205,7 +205,7 @@ $(document).ready(function() {
 	};
 	
 	
-var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
 if(iOS){
 	$('.slider__el').addClass('is-animated');
 	$('.slider__main a>img').addClass('zoomforios');

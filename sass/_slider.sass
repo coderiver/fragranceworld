@@ -21,6 +21,10 @@
 		+opacity(0)
 		+transition(opacity 1s ease-in)
 		+transition-delay(2s)
+		+ipad
+			display: none
+		+hdpi
+			display: none
 		.pace-done &
 			+opacity(1)
 		li
@@ -170,6 +174,21 @@
 		background-image: url(../img/slidebg_1.jpg)
 		line-height: 1 !important
 		background-attachment: fixed
+		+ipad
+			background-position: 50% 0
+			background-attachment: scroll
+			background-size: auto  !important
+			-webkit-background-size: auto  !important
+		+ipad-retina
+			background-position: 50% 0
+			background-attachment: scroll
+			background-size: auto !important
+			-webkit-background-size: auto !important
+		+hdpi
+			background-position: 50% 0
+			background-attachment: scroll
+			background-size: auto !important
+			-webkit-background-size: auto !important
 		.slider__main
 			margin-top: 0
 			+opacity(0)
@@ -191,6 +210,13 @@
 			+opacity(0)
 			+transition(opacity 2s ease-in)
 			+transition-delay(.1s)
+			+ipad
+				display: none
+			+ipad-retina
+				display: none
+			+hdpi
+				display: none
+			
 			.pace-done &
 				+opacity(1)
 
