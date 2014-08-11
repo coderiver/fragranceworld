@@ -1,5 +1,6 @@
 $(document).ready(function() {
 var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+if(iOS) {$('body').addClass("touch");}
 	function popup() {
 		$(' .btn-popup ').on('click', function(event) {
 			var id = $(this).attr("href");

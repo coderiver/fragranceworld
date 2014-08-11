@@ -29,6 +29,8 @@
 			display: none
 		+ipad-retina
 			display: none
+		+iphone5
+			display: none
 		.pace-done &
 			+opacity(1)
 		li
@@ -97,6 +99,20 @@
 		margin: -10px auto 0
 		color: #fff
 		z-index: 100
+		+iphone5
+			position: absolute
+			top: 50%
+			margin-top: -100px  
+			width: 100%
+			text-align: center
+			left: 0
+		&.first
+			+iphone5
+				position: relative
+				top: 0
+				left: 0
+				margin-top: -10px   
+				width: 700px
 		a
 			text-decoration: none
 		&.first
@@ -183,18 +199,18 @@
 		+ipad
 			background-position: 50% 0
 			background-attachment: scroll
-			background-size: auto  !important
-			-webkit-background-size: auto  !important
+			background-size: cover  !important
+			-webkit-background-size: cover  !important
 		+ipad-retina
 			background-position: 50% 0
 			background-attachment: scroll
-			background-size: auto !important
-			-webkit-background-size: auto !important
+			background-size: cover !important
+			-webkit-background-size: cover !important
 		+iphone5
 			background-position: 50% 0
 			background-attachment: scroll
-			background-size: auto !important
-			-webkit-background-size: auto !important
+			background-size: cover !important
+			-webkit-background-size: cover !important
 		.slider__main
 			margin-top: 0
 			+opacity(0)
@@ -385,6 +401,7 @@
 	margin-top: -290px
 	.is-animated &
 		top: 50%
+		
 
 #slide2_pic
 	position: absolute
